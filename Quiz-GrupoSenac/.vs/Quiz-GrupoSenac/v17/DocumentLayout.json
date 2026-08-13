@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|c:\\users\\rafaeldecarvalhowend\\desktop\\quiz-dati-grupo\\quiz-gruposenac\\frmtelalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|solutionrelative:frmtelalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|c:\\users\\rafaeldecarvalhowend\\desktop\\quiz-dati-grupo\\quiz-gruposenac\\frmtelalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|solutionrelative:frmtelalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmTelaLogin.cs",
+              "DocumentMoniker": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\FrmTelaLogin.cs",
+              "RelativeDocumentMoniker": "FrmTelaLogin.cs",
+              "ToolTip": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\FrmTelaLogin.cs",
+              "RelativeToolTip": "FrmTelaLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T22:57:11.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmTelaLogin.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\FrmTelaLogin.cs",
+              "RelativeDocumentMoniker": "FrmTelaLogin.cs",
+              "ToolTip": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\FrmTelaLogin.cs [Projeto]",
+              "RelativeToolTip": "FrmTelaLogin.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T22:55:06.305Z",
+              "EditorCaption": " [Projeto]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
