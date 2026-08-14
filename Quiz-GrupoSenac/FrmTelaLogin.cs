@@ -11,5 +11,25 @@ namespace Quiz_GrupoSenac
         {
 
         }
+
+        private void txtNick_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCadastreTelaLogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
