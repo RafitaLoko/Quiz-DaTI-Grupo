@@ -21,5 +21,15 @@ namespace Quiz_GrupoSenac
         {
 
         }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCadastreTelaLogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

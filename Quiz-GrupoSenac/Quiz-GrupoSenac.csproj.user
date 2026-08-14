@@ -4,6 +4,9 @@
     <Compile Update="FrmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmTelaDeCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmTelaDePerfil.cs">
       <SubType>Form</SubType>
     </Compile>

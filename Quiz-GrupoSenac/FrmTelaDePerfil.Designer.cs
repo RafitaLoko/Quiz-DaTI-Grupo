@@ -104,6 +104,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.MenuHighlight;
             ClientSize = new Size(800, 450);
             Controls.Add(lblConquistasPerfil);
             Controls.Add(lblMaiorSequenciaAcertosPerfil);
@@ -114,6 +115,7 @@
             Controls.Add(lblNicknamePerfil);
             Name = "FrmTelaDePerfil";
             Text = "FrmTelaDePerfil";
+            Load += FrmTelaDePerfil_Load;
             ResumeLayout(false);
             PerformLayout();
         }

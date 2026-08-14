@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Quiz_GrupoSenac
 {
-    public partial class FrmTelaDePerfil : Form
+    public partial class FrmTelaDeCadastro : Form
     {
-        public FrmTelaDePerfil()
+        public FrmTelaDeCadastro()
         {
             InitializeComponent();
-        }
-
-        private void FrmTelaDePerfil_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -34,7 +34,9 @@ namespace Quiz_GrupoSenac
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
-           
+            this.Hide();
+            FrmTelaDePerfil frmTelaDePerfil = new FrmTelaDePerfil();
+            this.Show(frmTelaDePerfil);
         }
 
         private void FrmMenuPrincipal_Load(object sender, EventArgs e)
