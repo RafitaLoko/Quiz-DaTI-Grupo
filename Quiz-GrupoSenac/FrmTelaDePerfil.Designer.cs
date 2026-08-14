@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
+            lblNicknamePerfil = new Label();
+            lblNivelPerfil = new Label();
             SuspendLayout();
             // 
-            // label1
+            // lblNicknamePerfil
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(22, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(90, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Nickname";
+            lblNicknamePerfil.AutoSize = true;
+            lblNicknamePerfil.Location = new Point(22, 19);
+            lblNicknamePerfil.Name = "lblNicknamePerfil";
+            lblNicknamePerfil.Size = new Size(90, 25);
+            lblNicknamePerfil.TabIndex = 0;
+            lblNicknamePerfil.Text = "Nickname";
             // 
-            // label2
+            // lblNivelPerfil
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(22, 86);
-            label2.Name = "label2";
-            label2.Size = new Size(55, 25);
-            label2.TabIndex = 1;
-            label2.Text = "Nível:";
+            lblNivelPerfil.AutoSize = true;
+            lblNivelPerfil.Location = new Point(22, 86);
+            lblNivelPerfil.Name = "lblNivelPerfil";
+            lblNivelPerfil.Size = new Size(55, 25);
+            lblNivelPerfil.TabIndex = 1;
+            lblNivelPerfil.Text = "Nível:";
             // 
             // FrmTelaDePerfil
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(lblNivelPerfil);
+            Controls.Add(lblNicknamePerfil);
             Name = "FrmTelaDePerfil";
             Text = "FrmTelaDePerfil";
             ResumeLayout(false);
@@ -65,7 +65,7 @@
 
         #endregion
 
-        private Label label1;
-        private Label label2;
+        private Label lblNicknamePerfil;
+        private Label lblNivelPerfil;
     }
 }
