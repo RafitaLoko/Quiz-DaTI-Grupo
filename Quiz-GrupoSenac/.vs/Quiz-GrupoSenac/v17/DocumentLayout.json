@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|c:\\users\\rafaeldecarvalhowend\\desktop\\quiz-dati-grupo\\quiz-gruposenac\\frmtelalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|solutionrelative:frmtelalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|c:\\users\\rafaeldecarvalhowend\\desktop\\quiz-dati-grupo\\quiz-gruposenac\\frmteladeperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|solutionrelative:frmteladeperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|c:\\users\\rafaeldecarvalhowend\\desktop\\quiz-dati-grupo\\quiz-gruposenac\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|solutionrelative:frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|c:\\users\\rafaeldecarvalhowend\\desktop\\quiz-dati-grupo\\quiz-gruposenac\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|solutionrelative:frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|c:\\users\\rafaeldecarvalhowend\\desktop\\quiz-dati-grupo\\quiz-gruposenac\\frmtelalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|solutionrelative:frmtelalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|c:\\users\\rafaeldecarvalhowend\\desktop\\quiz-dati-grupo\\quiz-gruposenac\\quiz-gruposenac.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|solutionrelative:quiz-gruposenac.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|c:\\users\\rafaeldecarvalhowend\\desktop\\quiz-dati-grupo\\quiz-gruposenac\\frmtelalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9D5EC95-C47E-467B-A7BB-72252BE5A013}|Quiz-GrupoSenac.csproj|solutionrelative:frmtelalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,19 +43,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FrmTelaLogin.cs",
-              "DocumentMoniker": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\FrmTelaLogin.cs",
-              "RelativeDocumentMoniker": "FrmTelaLogin.cs",
-              "ToolTip": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\FrmTelaLogin.cs",
-              "RelativeToolTip": "FrmTelaLogin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Title": "FrmTelaDePerfil.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\FrmTelaDePerfil.cs",
+              "RelativeDocumentMoniker": "FrmTelaDePerfil.cs",
+              "ToolTip": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\FrmTelaDePerfil.cs [Projeto]",
+              "RelativeToolTip": "FrmTelaDePerfil.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T22:57:11.725Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-14T00:06:03.963Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmMenuPrincipal.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\FrmMenuPrincipal.cs",
+              "RelativeDocumentMoniker": "FrmMenuPrincipal.cs",
+              "ToolTip": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\FrmMenuPrincipal.cs [Projeto]",
+              "RelativeToolTip": "FrmMenuPrincipal.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T23:19:09.327Z",
+              "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FrmMenuPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\FrmMenuPrincipal.cs",
+              "RelativeDocumentMoniker": "FrmMenuPrincipal.cs",
+              "ToolTip": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\FrmMenuPrincipal.cs",
+              "RelativeToolTip": "FrmMenuPrincipal.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAqwCQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T23:22:21.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FrmTelaLogin.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\FrmTelaLogin.cs",
               "RelativeDocumentMoniker": "FrmTelaLogin.cs",
@@ -48,6 +88,32 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-13T22:55:06.305Z",
               "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Quiz-GrupoSenac",
+              "DocumentMoniker": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\Quiz-GrupoSenac.csproj",
+              "RelativeDocumentMoniker": "Quiz-GrupoSenac.csproj",
+              "ToolTip": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\Quiz-GrupoSenac.csproj",
+              "RelativeToolTip": "Quiz-GrupoSenac.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-13T23:18:29.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmTelaLogin.cs",
+              "DocumentMoniker": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\FrmTelaLogin.cs",
+              "RelativeDocumentMoniker": "FrmTelaLogin.cs",
+              "ToolTip": "C:\\Users\\RAFAELDECARVALHOWEND\\Desktop\\Quiz-DaTI-Grupo\\Quiz-GrupoSenac\\FrmTelaLogin.cs",
+              "RelativeToolTip": "FrmTelaLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T22:57:11.725Z",
+              "EditorCaption": ""
             }
           ]
         }

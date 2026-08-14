@@ -11,5 +11,15 @@ namespace Quiz_GrupoSenac
         {
 
         }
+
+        private void txtNick_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
