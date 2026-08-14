@@ -30,6 +30,11 @@
         {
             lblNicknamePerfil = new Label();
             lblNivelPerfil = new Label();
+            lblPontuacaoTotalPerfil = new Label();
+            lblAcertosPerfil = new Label();
+            lblPerguntasRespondidasPerfil = new Label();
+            lblMaiorSequenciaAcertosPerfil = new Label();
+            lblConquistasPerfil = new Label();
             SuspendLayout();
             // 
             // lblNicknamePerfil
@@ -50,11 +55,61 @@
             lblNivelPerfil.TabIndex = 1;
             lblNivelPerfil.Text = "Nível:";
             // 
+            // lblPontuacaoTotalPerfil
+            // 
+            lblPontuacaoTotalPerfil.AutoSize = true;
+            lblPontuacaoTotalPerfil.Location = new Point(366, 29);
+            lblPontuacaoTotalPerfil.Name = "lblPontuacaoTotalPerfil";
+            lblPontuacaoTotalPerfil.Size = new Size(140, 25);
+            lblPontuacaoTotalPerfil.TabIndex = 2;
+            lblPontuacaoTotalPerfil.Text = "Pontuação total:";
+            // 
+            // lblAcertosPerfil
+            // 
+            lblAcertosPerfil.AutoSize = true;
+            lblAcertosPerfil.Location = new Point(366, 76);
+            lblAcertosPerfil.Name = "lblAcertosPerfil";
+            lblAcertosPerfil.Size = new Size(76, 25);
+            lblAcertosPerfil.TabIndex = 3;
+            lblAcertosPerfil.Text = "Acertos:";
+            // 
+            // lblPerguntasRespondidasPerfil
+            // 
+            lblPerguntasRespondidasPerfil.AutoSize = true;
+            lblPerguntasRespondidasPerfil.Location = new Point(366, 134);
+            lblPerguntasRespondidasPerfil.Name = "lblPerguntasRespondidasPerfil";
+            lblPerguntasRespondidasPerfil.Size = new Size(197, 25);
+            lblPerguntasRespondidasPerfil.TabIndex = 4;
+            lblPerguntasRespondidasPerfil.Text = "Perguntas respondidas:";
+            // 
+            // lblMaiorSequenciaAcertosPerfil
+            // 
+            lblMaiorSequenciaAcertosPerfil.AutoSize = true;
+            lblMaiorSequenciaAcertosPerfil.Location = new Point(366, 195);
+            lblMaiorSequenciaAcertosPerfil.Name = "lblMaiorSequenciaAcertosPerfil";
+            lblMaiorSequenciaAcertosPerfil.Size = new Size(232, 25);
+            lblMaiorSequenciaAcertosPerfil.TabIndex = 5;
+            lblMaiorSequenciaAcertosPerfil.Text = "Maior sequência de acertos:";
+            // 
+            // lblConquistasPerfil
+            // 
+            lblConquistasPerfil.AutoSize = true;
+            lblConquistasPerfil.Location = new Point(22, 266);
+            lblConquistasPerfil.Name = "lblConquistasPerfil";
+            lblConquistasPerfil.Size = new Size(100, 25);
+            lblConquistasPerfil.TabIndex = 6;
+            lblConquistasPerfil.Text = "Conquistas";
+            // 
             // FrmTelaDePerfil
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblConquistasPerfil);
+            Controls.Add(lblMaiorSequenciaAcertosPerfil);
+            Controls.Add(lblPerguntasRespondidasPerfil);
+            Controls.Add(lblAcertosPerfil);
+            Controls.Add(lblPontuacaoTotalPerfil);
             Controls.Add(lblNivelPerfil);
             Controls.Add(lblNicknamePerfil);
             Name = "FrmTelaDePerfil";
@@ -67,5 +122,10 @@
 
         private Label lblNicknamePerfil;
         private Label lblNivelPerfil;
+        private Label lblPontuacaoTotalPerfil;
+        private Label lblAcertosPerfil;
+        private Label lblPerguntasRespondidasPerfil;
+        private Label lblMaiorSequenciaAcertosPerfil;
+        private Label lblConquistasPerfil;
     }
 }
