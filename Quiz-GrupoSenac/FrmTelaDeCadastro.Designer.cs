@@ -34,6 +34,12 @@
             txtNickTelaCadastro = new TextBox();
             lblDataNascimento = new Label();
             txtDataNascimentoTelaCadastro = new TextBox();
+            lblSenhaTelaCadastro = new Label();
+            txtSenhaTelaCadastro = new TextBox();
+            lblConfirmarSenhaTelaCadastro = new Label();
+            txtConfirmarSenhaTelaCadastro = new TextBox();
+            btnCadastrarTelaCadastro = new Button();
+            btnCancelarTelaCadastro = new Button();
             SuspendLayout();
             // 
             // lblNomeCompletoTelaCadastro
@@ -84,11 +90,77 @@
             txtDataNascimentoTelaCadastro.Size = new Size(204, 31);
             txtDataNascimentoTelaCadastro.TabIndex = 5;
             // 
+            // lblSenhaTelaCadastro
+            // 
+            lblSenhaTelaCadastro.AutoSize = true;
+            lblSenhaTelaCadastro.Location = new Point(13, 257);
+            lblSenhaTelaCadastro.Name = "lblSenhaTelaCadastro";
+            lblSenhaTelaCadastro.Size = new Size(60, 25);
+            lblSenhaTelaCadastro.TabIndex = 6;
+            lblSenhaTelaCadastro.Text = "Senha";
+            // 
+            // txtSenhaTelaCadastro
+            // 
+            txtSenhaTelaCadastro.Location = new Point(13, 285);
+            txtSenhaTelaCadastro.Name = "txtSenhaTelaCadastro";
+            txtSenhaTelaCadastro.Size = new Size(150, 31);
+            txtSenhaTelaCadastro.TabIndex = 7;
+            txtSenhaTelaCadastro.UseSystemPasswordChar = true;
+            // 
+            // lblConfirmarSenhaTelaCadastro
+            // 
+            lblConfirmarSenhaTelaCadastro.AutoSize = true;
+            lblConfirmarSenhaTelaCadastro.Location = new Point(14, 341);
+            lblConfirmarSenhaTelaCadastro.Name = "lblConfirmarSenhaTelaCadastro";
+            lblConfirmarSenhaTelaCadastro.Size = new Size(144, 25);
+            lblConfirmarSenhaTelaCadastro.TabIndex = 8;
+            lblConfirmarSenhaTelaCadastro.Text = "Confirmar Senha";
+            // 
+            // txtConfirmarSenhaTelaCadastro
+            // 
+            txtConfirmarSenhaTelaCadastro.Location = new Point(14, 369);
+            txtConfirmarSenhaTelaCadastro.Name = "txtConfirmarSenhaTelaCadastro";
+            txtConfirmarSenhaTelaCadastro.Size = new Size(150, 31);
+            txtConfirmarSenhaTelaCadastro.TabIndex = 9;
+            // 
+            // btnCadastrarTelaCadastro
+            // 
+            btnCadastrarTelaCadastro.BackColor = Color.MediumSpringGreen;
+            btnCadastrarTelaCadastro.FlatAppearance.BorderColor = Color.Gold;
+            btnCadastrarTelaCadastro.FlatStyle = FlatStyle.Flat;
+            btnCadastrarTelaCadastro.Location = new Point(638, 350);
+            btnCadastrarTelaCadastro.Name = "btnCadastrarTelaCadastro";
+            btnCadastrarTelaCadastro.Size = new Size(128, 53);
+            btnCadastrarTelaCadastro.TabIndex = 10;
+            btnCadastrarTelaCadastro.Text = "Cadastrar";
+            btnCadastrarTelaCadastro.UseVisualStyleBackColor = false;
+            btnCadastrarTelaCadastro.Click += btnCadastrarTelaCadastro_Click;
+            // 
+            // btnCancelarTelaCadastro
+            // 
+            btnCancelarTelaCadastro.BackColor = Color.Crimson;
+            btnCancelarTelaCadastro.FlatAppearance.BorderColor = Color.DarkCyan;
+            btnCancelarTelaCadastro.FlatStyle = FlatStyle.Flat;
+            btnCancelarTelaCadastro.Location = new Point(520, 359);
+            btnCancelarTelaCadastro.Name = "btnCancelarTelaCadastro";
+            btnCancelarTelaCadastro.Size = new Size(112, 34);
+            btnCancelarTelaCadastro.TabIndex = 11;
+            btnCancelarTelaCadastro.Text = "Cancelar";
+            btnCancelarTelaCadastro.UseVisualStyleBackColor = false;
+            btnCancelarTelaCadastro.Click += btnCancelarTelaCadastro_Click;
+            // 
             // FrmTelaDeCadastro
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.PaleTurquoise;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnCancelarTelaCadastro);
+            Controls.Add(btnCadastrarTelaCadastro);
+            Controls.Add(txtConfirmarSenhaTelaCadastro);
+            Controls.Add(lblConfirmarSenhaTelaCadastro);
+            Controls.Add(txtSenhaTelaCadastro);
+            Controls.Add(lblSenhaTelaCadastro);
             Controls.Add(txtDataNascimentoTelaCadastro);
             Controls.Add(lblDataNascimento);
             Controls.Add(txtNickTelaCadastro);
@@ -109,5 +181,11 @@
         private TextBox txtNickTelaCadastro;
         private Label lblDataNascimento;
         private TextBox txtDataNascimentoTelaCadastro;
+        private Label lblSenhaTelaCadastro;
+        private TextBox txtSenhaTelaCadastro;
+        private Label lblConfirmarSenhaTelaCadastro;
+        private TextBox txtConfirmarSenhaTelaCadastro;
+        private Button btnCadastrarTelaCadastro;
+        private Button btnCancelarTelaCadastro;
     }
 }

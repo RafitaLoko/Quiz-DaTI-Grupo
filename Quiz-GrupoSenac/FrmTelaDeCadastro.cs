@@ -16,5 +16,15 @@ namespace Quiz_GrupoSenac
         {
             InitializeComponent();
         }
+
+        private void btnCadastrarTelaCadastro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelarTelaCadastro_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
