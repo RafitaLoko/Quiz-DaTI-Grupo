@@ -32,6 +32,7 @@
             btnVerRanking = new Button();
             btnHistorico = new Button();
             btnPerfil = new Button();
+            btnComoJogar = new Button();
             SuspendLayout();
             // 
             // btnIniciar
@@ -86,12 +87,26 @@
             btnPerfil.UseVisualStyleBackColor = false;
             btnPerfil.Click += btnPerfil_Click;
             // 
+            // btnComoJogar
+            // 
+            btnComoJogar.BackColor = Color.LightSkyBlue;
+            btnComoJogar.FlatAppearance.BorderColor = Color.SteelBlue;
+            btnComoJogar.FlatStyle = FlatStyle.Flat;
+            btnComoJogar.Location = new Point(652, 404);
+            btnComoJogar.Name = "btnComoJogar";
+            btnComoJogar.Size = new Size(136, 34);
+            btnComoJogar.TabIndex = 4;
+            btnComoJogar.Text = "Como jogar";
+            btnComoJogar.UseVisualStyleBackColor = false;
+            btnComoJogar.Click += btnComoJogar_Click;
+            // 
             // FrmMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnComoJogar);
             Controls.Add(btnPerfil);
             Controls.Add(btnHistorico);
             Controls.Add(btnVerRanking);
@@ -108,5 +123,6 @@
         private Button btnVerRanking;
         private Button btnHistorico;
         private Button btnPerfil;
+        private Button btnComoJogar;
     }
 }
