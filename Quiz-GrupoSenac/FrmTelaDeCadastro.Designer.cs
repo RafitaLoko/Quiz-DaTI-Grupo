@@ -169,6 +169,7 @@
             Controls.Add(lblNomeCompletoTelaCadastro);
             Name = "FrmTelaDeCadastro";
             Text = "FrmTelaDeCadastro";
+            Load += FrmTelaDeCadastro_Load;
             ResumeLayout(false);
             PerformLayout();
         }

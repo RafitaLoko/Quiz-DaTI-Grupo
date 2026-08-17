@@ -29,7 +29,9 @@ namespace Quiz_GrupoSenac
 
         private void btnHistorico_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FrmTelaHistorico frmTelaHistorico = new FrmTelaHistorico();
+            this.Show(frmTelaHistorico);
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)

@@ -29,7 +29,9 @@ namespace Quiz_GrupoSenac
 
         private void btnCadastreTelaLogin_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FrmTelaDeCadastro frmTelaDeCadastro = new FrmTelaDeCadastro();
+            this.Show();
         }
     }
 }

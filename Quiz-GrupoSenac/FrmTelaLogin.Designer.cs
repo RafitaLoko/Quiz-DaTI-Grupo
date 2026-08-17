@@ -81,9 +81,9 @@
             btnCadastreTelaLogin.BackColor = Color.DarkOrange;
             btnCadastreTelaLogin.FlatAppearance.BorderColor = Color.Lime;
             btnCadastreTelaLogin.FlatStyle = FlatStyle.Flat;
-            btnCadastreTelaLogin.Location = new Point(326, 363);
+            btnCadastreTelaLogin.Location = new Point(326, 364);
             btnCadastreTelaLogin.Name = "btnCadastreTelaLogin";
-            btnCadastreTelaLogin.Size = new Size(137, 39);
+            btnCadastreTelaLogin.Size = new Size(150, 39);
             btnCadastreTelaLogin.TabIndex = 4;
             btnCadastreTelaLogin.Text = "Cadastre-se";
             btnCadastreTelaLogin.UseVisualStyleBackColor = false;

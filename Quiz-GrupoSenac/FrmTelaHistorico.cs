@@ -21,5 +21,12 @@ namespace Quiz_GrupoSenac
         {
 
         }
+
+        private void btnVoltarTelaHistorico_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
+            this.Show();
+        }
     }
 }

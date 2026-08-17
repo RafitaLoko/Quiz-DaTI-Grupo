@@ -54,6 +54,7 @@
             btnVoltarTelaHistorico.TabIndex = 1;
             btnVoltarTelaHistorico.Text = "Voltar";
             btnVoltarTelaHistorico.UseVisualStyleBackColor = false;
+            btnVoltarTelaHistorico.Click += btnVoltarTelaHistorico_Click;
             // 
             // FrmTelaHistorico
             // 

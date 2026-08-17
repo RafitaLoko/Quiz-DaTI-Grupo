@@ -26,5 +26,10 @@ namespace Quiz_GrupoSenac
         {
 
         }
+
+        private void FrmTelaDeCadastro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
