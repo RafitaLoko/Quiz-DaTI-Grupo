@@ -31,14 +31,14 @@ namespace Quiz_GrupoSenac
         {
             this.Hide();
             FrmTelaHistorico frmTelaHistorico = new FrmTelaHistorico();
-            this.Show(frmTelaHistorico);
+            frmTelaHistorico.Show();
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
             this.Hide();
             FrmTelaDePerfil frmTelaDePerfil = new FrmTelaDePerfil();
-            this.Show(frmTelaDePerfil);
+            frmTelaDePerfil.Show();
         }
 
         private void FrmMenuPrincipal_Load(object sender, EventArgs e)

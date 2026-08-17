@@ -31,7 +31,7 @@ namespace Quiz_GrupoSenac
         {
             this.Hide();
             FrmTelaDeCadastro frmTelaDeCadastro = new FrmTelaDeCadastro();
-            this.Show();
+            frmTelaDeCadastro.Show();
         }
     }
 }
