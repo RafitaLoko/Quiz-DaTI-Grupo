@@ -43,5 +43,10 @@ namespace Quiz_GrupoSenac
         {
 
         }
+
+        private void btnComoJogar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
