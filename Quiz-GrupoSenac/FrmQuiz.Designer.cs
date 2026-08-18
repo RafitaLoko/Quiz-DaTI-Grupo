@@ -155,6 +155,7 @@
             // lblPontuacaoQuiz
             // 
             lblPontuacaoQuiz.AutoSize = true;
+            lblPontuacaoQuiz.BackColor = Color.Aquamarine;
             lblPontuacaoQuiz.Location = new Point(404, 416);
             lblPontuacaoQuiz.Name = "lblPontuacaoQuiz";
             lblPontuacaoQuiz.Size = new Size(99, 25);
