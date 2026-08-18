@@ -87,6 +87,7 @@
             // 
             txtDataNascimentoTelaCadastro.Location = new Point(13, 206);
             txtDataNascimentoTelaCadastro.Name = "txtDataNascimentoTelaCadastro";
+            txtDataNascimentoTelaCadastro.PlaceholderText = "AAAA/MM/DD";
             txtDataNascimentoTelaCadastro.Size = new Size(204, 31);
             txtDataNascimentoTelaCadastro.TabIndex = 5;
             // 
