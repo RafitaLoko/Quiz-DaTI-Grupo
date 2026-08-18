@@ -122,6 +122,7 @@
             txtConfirmarSenhaTelaCadastro.Name = "txtConfirmarSenhaTelaCadastro";
             txtConfirmarSenhaTelaCadastro.Size = new Size(150, 31);
             txtConfirmarSenhaTelaCadastro.TabIndex = 9;
+            txtConfirmarSenhaTelaCadastro.UseSystemPasswordChar = true;
             // 
             // btnCadastrarTelaCadastro
             // 
@@ -169,6 +170,7 @@
             Controls.Add(lblNomeCompletoTelaCadastro);
             Name = "FrmTelaDeCadastro";
             Text = "FrmTelaDeCadastro";
+            Load += FrmTelaDeCadastro_Load;
             ResumeLayout(false);
             PerformLayout();
         }
