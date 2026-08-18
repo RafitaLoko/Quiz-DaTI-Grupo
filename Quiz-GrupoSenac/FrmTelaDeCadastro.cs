@@ -49,7 +49,9 @@ namespace Quiz_GrupoSenac
 
         private void btnCancelarTelaCadastro_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FrmTelaLogin frmTelaLogin = new FrmTelaLogin();
+            frmTelaLogin.ShowDialog();
         }
 
         private void FrmTelaDeCadastro_Load(object sender, EventArgs e)
