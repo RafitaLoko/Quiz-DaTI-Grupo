@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
 
-namespace Quiz_GrupoSenac.Modelos
+namespace Quiz_GrupoSenac.Banco
 {
     public class Conexao
     {

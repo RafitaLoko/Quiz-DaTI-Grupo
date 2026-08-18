@@ -1,4 +1,5 @@
 ﻿using Npgsql;
+using Quiz_GrupoSenac.Banco;
 using Quiz_GrupoSenac.Modelos;
 using System;
 using System.Collections.Generic;
