@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BCrypt.Net;
+using Quiz_GrupoSenac.Modelos;
+using Quiz_GrupoSenac.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +22,28 @@ namespace Quiz_GrupoSenac
 
         private void btnCadastrarTelaCadastro_Click(object sender, EventArgs e)
         {
+            if (txtSenhaTelaCadastro.Text != txtConfirmarSenhaTelaCadastro.Text)
+            {
+                MessageBox.Show("As senhas não conferem.");
+                return;
+            }
+
+            string senhaCriptografada =
+                BCrypt.Net.BCrypt.HashPassword(txtSenhaTelaCadastro.Text);
+
+            Usuario usuario = new Usuario();
+
+            usuario.Nome = txtSenhaTelaCadastro.Text;
+            usuario.Nick = txtNickTelaCadastro.Text;
+            usuario.DataNascimento = DateTime.Now;
+            usuario.Senha = senhaCriptografada;
+            usuario.Tipo = "Aluno";
+
+            UsuarioRepository repository = new UsuarioRepository();
+
+            repository.Cadastrar(usuario);
+
+            MessageBox.Show("Usuário cadastrado!");
 
         }
 
