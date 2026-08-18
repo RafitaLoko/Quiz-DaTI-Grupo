@@ -27,7 +27,7 @@ namespace Quiz_GrupoSenac.Repositories
                 cmd.Parameters.AddWithValue("@Nick", usuario.Nick);
                 cmd.Parameters.AddWithValue("@DataNascimento", usuario.DataNascimento);
                 cmd.Parameters.AddWithValue("@Senha", usuario.Senha);
-                cmd.Parameters.AddWithValue("@Tipo", usuario);
+                cmd.Parameters.AddWithValue("@Tipo", usuario.Tipo);
                 
                 conn.Open();
 
