@@ -10,7 +10,7 @@ namespace Quiz_GrupoSenac.Repositories
 {
     public class UsuarioRepository
     {
-        private Conexao conexao = new Conexao();
+        private static Conexao conexao = new Conexao();
 
         public void Cadastrar(Usuario usuario)
         {

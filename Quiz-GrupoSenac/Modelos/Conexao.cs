@@ -10,7 +10,7 @@ namespace Quiz_GrupoSenac.Modelos
     public class Conexao
     {
         private string connectionString =
-            "Host=localhost;Port=5432;Database=quiz_informatica;Username=postgres;Password=1234";
+            "Host=localhost;Port=5432;Database=postgres;Username=postgres;Password=admin";
         public NpgsqlConnection Conectar()
         {
             return new NpgsqlConnection(connectionString);
