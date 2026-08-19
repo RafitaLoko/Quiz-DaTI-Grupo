@@ -19,7 +19,9 @@ namespace Quiz_GrupoSenac
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-
+            this.Hide();   
+            FrmQuiz frmQuiz = new FrmQuiz();
+            frmQuiz.Show();
         }
 
         private void btnVerRanking_Click(object sender, EventArgs e)
