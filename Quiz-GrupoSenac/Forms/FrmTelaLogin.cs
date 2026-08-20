@@ -27,9 +27,9 @@ namespace Quiz_GrupoSenac
 
         private async void btnEntrar_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
             Usuario usuario = await UsuarioRepository.BuscarPorNick(txtNick.Text);
-=======
+
             if (txtNick.Text == "admin" &&  txtSenha.Text == "1234")
             {
                 this.Hide();
@@ -41,12 +41,13 @@ namespace Quiz_GrupoSenac
                 MessageBox.Show("Nick ou Senha invalidos");
             }
 
->>>>>>> bc2ba16b4a73661876337e327705aca17e6a54f2
+
 
             if (usuario != null && BCrypt.Net.BCrypt.Verify(txtSenha.Text, usuario.Senha))
             {
+                Sessao.UsuarioLogado = usuario;
                 this.Hide();
-                FrmMenuPrincipal menu = new FrmMenuPrincipal(usuario);
+                FrmMenuPrincipal menu = new FrmMenuPrincipal();
                 menu.ShowDialog();
                 this.Show();
             }

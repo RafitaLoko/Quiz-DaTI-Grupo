@@ -13,7 +13,7 @@ namespace Quiz_GrupoSenac
 {
     public partial class FrmMenuPrincipal : Form
     {
-        public FrmMenuPrincipal(Usuario Usuario)
+        public FrmMenuPrincipal()
         {
             InitializeComponent();
         }
@@ -27,14 +27,15 @@ namespace Quiz_GrupoSenac
 
         private void btnVerRanking_Click(object sender, EventArgs e)
         {
-
+           // Sessao.UsuarioLogado.Nick;
         }
 
         private void btnHistorico_Click(object sender, EventArgs e)
         {
             this.Hide();
             FrmTelaHistorico frmTelaHistorico = new FrmTelaHistorico();
-            frmTelaHistorico.Show();
+            frmTelaHistorico.ShowDialog();
+            this.Show();
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
