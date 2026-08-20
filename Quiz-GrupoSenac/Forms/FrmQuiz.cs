@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Quiz_GrupoSenac.Modelos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,11 @@ namespace Quiz_GrupoSenac
         private void FrmQuiz_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblNickQuiz_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

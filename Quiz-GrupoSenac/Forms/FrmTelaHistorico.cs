@@ -24,7 +24,8 @@ namespace Quiz_GrupoSenac
 
         private void btnVoltarTelaHistorico_Click(object sender, EventArgs e)
         {
-            this.Close();        
+            this.Close();
+            
         }
 
         private void FrmTelaHistorico_Load(object sender, EventArgs e)

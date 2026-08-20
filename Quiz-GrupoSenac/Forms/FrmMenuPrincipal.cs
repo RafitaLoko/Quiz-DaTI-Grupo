@@ -22,7 +22,7 @@ namespace Quiz_GrupoSenac
         {
             this.Hide();   
             FrmQuiz frmQuiz = new FrmQuiz();
-            frmQuiz.Show();
+            frmQuiz.ShowDialog();
         }
 
         private void btnVerRanking_Click(object sender, EventArgs e)
@@ -42,7 +42,7 @@ namespace Quiz_GrupoSenac
         {
             this.Hide();
             FrmTelaDePerfil frmTelaDePerfil = new FrmTelaDePerfil();
-            frmTelaDePerfil.Show();
+            frmTelaDePerfil.ShowDialog();
         }
 
         private void FrmMenuPrincipal_Load(object sender, EventArgs e)
@@ -54,7 +54,7 @@ namespace Quiz_GrupoSenac
         {
             this.Hide();
             FrmComoJogar frmComoJogar = new FrmComoJogar();
-            frmComoJogar.Show();
+            frmComoJogar.ShowDialog();
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Quiz_GrupoSenac
         {
             this.Hide();
             FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
-            frmMenuPrincipal.Show();
+            frmMenuPrincipal.ShowDialog();
         }
     }
 }
