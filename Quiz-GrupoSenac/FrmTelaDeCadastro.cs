@@ -43,6 +43,10 @@ namespace Quiz_GrupoSenac
 
             MessageBox.Show("Usuário cadastrado!");
 
+            this.Hide();
+            FrmTelaLogin frmTelaLogin = new FrmTelaLogin();
+            frmTelaLogin.ShowDialog();
+
         }
 
         private void btnCancelarTelaCadastro_Click(object sender, EventArgs e)

@@ -66,6 +66,7 @@
             Controls.Add(dgvHistorico);
             Name = "FrmTelaHistorico";
             Text = "FrmTelaHistorico";
+            Load += FrmTelaHistorico_Load;
             ((System.ComponentModel.ISupportInitialize)dgvHistorico).EndInit();
             ResumeLayout(false);
         }

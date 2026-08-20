@@ -35,6 +35,7 @@
             lblPerguntasRespondidasPerfil = new Label();
             lblMaiorSequenciaAcertosPerfil = new Label();
             lblConquistasPerfil = new Label();
+            btnVoltarPerfil = new Button();
             SuspendLayout();
             // 
             // lblNicknamePerfil
@@ -100,12 +101,26 @@
             lblConquistasPerfil.TabIndex = 6;
             lblConquistasPerfil.Text = "Conquistas";
             // 
+            // btnVoltarPerfil
+            // 
+            btnVoltarPerfil.BackColor = SystemColors.GradientInactiveCaption;
+            btnVoltarPerfil.FlatAppearance.BorderColor = Color.Gold;
+            btnVoltarPerfil.FlatStyle = FlatStyle.Flat;
+            btnVoltarPerfil.Location = new Point(676, 403);
+            btnVoltarPerfil.Name = "btnVoltarPerfil";
+            btnVoltarPerfil.Size = new Size(112, 35);
+            btnVoltarPerfil.TabIndex = 7;
+            btnVoltarPerfil.Text = "Voltar";
+            btnVoltarPerfil.UseVisualStyleBackColor = false;
+            btnVoltarPerfil.Click += btnVoltarPerfil_Click;
+            // 
             // FrmTelaDePerfil
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.MenuHighlight;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnVoltarPerfil);
             Controls.Add(lblConquistasPerfil);
             Controls.Add(lblMaiorSequenciaAcertosPerfil);
             Controls.Add(lblPerguntasRespondidasPerfil);
@@ -129,5 +144,6 @@
         private Label lblPerguntasRespondidasPerfil;
         private Label lblMaiorSequenciaAcertosPerfil;
         private Label lblConquistasPerfil;
+        private Button btnVoltarPerfil;
     }
 }
