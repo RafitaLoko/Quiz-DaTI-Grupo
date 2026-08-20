@@ -23,5 +23,10 @@ namespace Quiz_GrupoSenac
             FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
             frmMenuPrincipal.Show();
         }
+
+        private void FrmComoJogar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

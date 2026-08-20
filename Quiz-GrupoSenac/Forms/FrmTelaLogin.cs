@@ -27,26 +27,27 @@ namespace Quiz_GrupoSenac
 
         private async void btnEntrar_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            Usuario usuario = await UsuarioRepository.BuscarPorNick(txtNick.Text);
-=======
-            if (txtNick.Text == "admin" &&  txtSenha.Text == "1234")
-            {
-                this.Hide();
-                FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
-                frmMenuPrincipal.Show();
-            }
-            else
-            {
-                MessageBox.Show("Nick ou Senha invalidos");
-            }
 
->>>>>>> bc2ba16b4a73661876337e327705aca17e6a54f2
+            Usuario usuario = await UsuarioRepository.BuscarPorNick(txtNick.Text);
+
+            //if (txtNick.Text == "admin" &&  txtSenha.Text == "1234")
+            //{
+            //    this.Hide();
+            //    FrmTelaMenuAdmin frmTelaMenuAdmin = new FrmTelaMenuAdmin();
+            //    frmTelaMenuAdmin.ShowDialog();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Nick ou Senha invalidos");
+            //}
+
+
 
             if (usuario != null && BCrypt.Net.BCrypt.Verify(txtSenha.Text, usuario.Senha))
             {
+                Sessao.UsuarioLogado = usuario;
                 this.Hide();
-                FrmMenuPrincipal menu = new FrmMenuPrincipal(usuario);
+                FrmMenuPrincipal menu = new FrmMenuPrincipal();
                 menu.ShowDialog();
                 this.Show();
             }
