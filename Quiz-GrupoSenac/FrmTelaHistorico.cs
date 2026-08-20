@@ -26,7 +26,7 @@ namespace Quiz_GrupoSenac
         {
             this.Hide();
             FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
-            this.Show();
+            frmMenuPrincipal.Show();
         }
 
         private void FrmTelaHistorico_Load(object sender, EventArgs e)

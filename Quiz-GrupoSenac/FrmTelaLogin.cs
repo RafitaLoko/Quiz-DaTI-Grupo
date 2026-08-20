@@ -24,6 +24,17 @@ namespace Quiz_GrupoSenac
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
+            if (txtNick.Text == "admin" &&  txtSenha.Text == "1234")
+            {
+                this.Hide();
+                FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
+                frmMenuPrincipal.Show();
+            }
+            else
+            {
+                MessageBox.Show("Nick ou Senha invalidos");
+            }
+
 
         }
 
