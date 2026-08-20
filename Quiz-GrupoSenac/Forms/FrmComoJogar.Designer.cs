@@ -157,6 +157,7 @@
             Controls.Add(label1);
             Name = "FrmComoJogar";
             Text = "Como Jogar";
+            Load += FrmComoJogar_Load;
             ResumeLayout(false);
             PerformLayout();
         }

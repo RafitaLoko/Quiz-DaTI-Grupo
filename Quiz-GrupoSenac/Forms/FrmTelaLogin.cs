@@ -33,8 +33,8 @@ namespace Quiz_GrupoSenac
             //if (txtNick.Text == "admin" &&  txtSenha.Text == "1234")
             //{
             //    this.Hide();
-              
-               
+            //    FrmTelaMenuAdmin frmTelaMenuAdmin = new FrmTelaMenuAdmin();
+            //    frmTelaMenuAdmin.ShowDialog();
             //}
             //else
             //{

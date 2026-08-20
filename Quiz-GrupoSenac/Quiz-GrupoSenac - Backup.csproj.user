@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
   <ItemGroup>
     <Compile Update="Forms\FrmComoJogar.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
+    <Compile Update="FrmMenuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmMenuPrincipal.cs">
+=======
     <Compile Update="Forms\FrmMenuPrincipal.cs">
+>>>>>>> 9d5c7f6be3ecf8ed0b09b05351bff99c4a8d9341
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\FrmQuiz.cs">
@@ -21,9 +27,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\FrmTelaLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Forms\FrmTelaMenuAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
