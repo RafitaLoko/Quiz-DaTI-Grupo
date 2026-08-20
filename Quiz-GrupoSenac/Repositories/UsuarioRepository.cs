@@ -1,4 +1,5 @@
-﻿using Npgsql;
+﻿using Dapper;
+using Npgsql;
 using Quiz_GrupoSenac.Banco;
 using Quiz_GrupoSenac.Modelos;
 using System;
@@ -13,27 +14,47 @@ namespace Quiz_GrupoSenac.Repositories
     {
         private static Conexao conexao = new Conexao();
 
-        public void Cadastrar(Usuario usuario)
+        public static async Task Cadastrar(Usuario usuario)
         {
-            string sql = @" 
-                INSERT INTO Usuario
-                (Nome, Nick, DataNascimento, Senha, Tipo)
-                VALUES
-                (@Nome, @Nick, @DataNascimento, @Senha, @Tipo)";
-            using (var conn = conexao.Conectar())
-                using (var cmd = new NpgsqlCommand(sql, conn)) 
-            {
-                cmd.Parameters.AddWithValue("@Nome", usuario.Nome);
-                cmd.Parameters.AddWithValue("@Nick", usuario.Nick);
-                cmd.Parameters.AddWithValue("@DataNascimento", usuario.DataNascimento);
-                cmd.Parameters.AddWithValue("@Senha", usuario.Senha);
-                cmd.Parameters.AddWithValue("@Tipo", usuario.Tipo);
-                
-                conn.Open();
-
-                cmd.ExecuteNonQuery();
+            await conexao.Conectar().QueryAsync(
+                @"
+                    INSERT INTO Usuario (Nome, Nick, DataNascimento, Senha, Tipo, PontuacaoTotal)
+                    VALUES (@Nome, @Nick, @DataNascimento, @Senha, @Tipo, @PontuacaoTotal)
+                ",
+                usuario
+                 );
             
-            }
+            
+        }
+
+        public static async Task<Usuario> BuscarPorNick(string nick)
+        {
+            var usuario = await conexao.Conectar().QueryFirstOrDefaultAsync<Usuario>(
+                @"
+                    SELECT 
+                        Id,
+                        Nome,
+                        Nick,
+                        DataNascimento,
+                        Senha,
+                        Tipo,
+                        PontuacaoTotal
+                    FROM
+                        Usuario
+                    WHERE
+                        Nick = @Nick
+                    ",
+                new
+                {
+                    Nick = nick
+                }
+                );
+            return usuario;
+
+         
         }
     }
 }
+
+
+        

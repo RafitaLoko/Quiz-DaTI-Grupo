@@ -25,7 +25,7 @@ namespace Quiz_GrupoSenac
         private void btnVoltarTelaHistorico_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
+            FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal(usuario);
             this.Show();
         }
     }

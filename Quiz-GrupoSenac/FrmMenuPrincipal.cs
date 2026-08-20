@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Quiz_GrupoSenac.Modelos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace Quiz_GrupoSenac
 {
     public partial class FrmMenuPrincipal : Form
     {
-        public FrmMenuPrincipal()
+        public FrmMenuPrincipal(Usuario Usuario)
         {
             InitializeComponent();
         }

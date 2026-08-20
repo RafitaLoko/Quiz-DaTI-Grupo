@@ -20,7 +20,7 @@ namespace Quiz_GrupoSenac
             InitializeComponent();
         }
 
-        private void btnCadastrarTelaCadastro_Click(object sender, EventArgs e)
+        private async void btnCadastrarTelaCadastro_Click(object sender, EventArgs e)
         {
             if (txtSenhaTelaCadastro.Text != txtConfirmarSenhaTelaCadastro.Text)
             {
@@ -33,15 +33,13 @@ namespace Quiz_GrupoSenac
 
             Usuario usuario = new Usuario();
 
-            usuario.Nome = txtSenhaTelaCadastro.Text;
+            usuario.Nome = txtNomeCompletoTelaCadastro.Text;
             usuario.Nick = txtNickTelaCadastro.Text;
             usuario.DataNascimento = DateTime.Now;
             usuario.Senha = senhaCriptografada;
             usuario.Tipo = "Aluno";
 
-            UsuarioRepository repository = new UsuarioRepository();
-
-            repository.Cadastrar(usuario);
+            await UsuarioRepository.Cadastrar(usuario);
 
             MessageBox.Show("Usuário cadastrado!");
 
