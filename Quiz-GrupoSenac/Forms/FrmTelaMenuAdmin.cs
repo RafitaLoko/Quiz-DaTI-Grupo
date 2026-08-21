@@ -24,7 +24,7 @@ namespace Quiz_GrupoSenac.Forms
 
         private void btnVerRanking_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnCadastrarPerguntasQuiz_Click(object sender, EventArgs e)
