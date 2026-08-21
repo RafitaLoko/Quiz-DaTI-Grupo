@@ -1,0 +1,90 @@
+﻿
+create table Usuario (
+Id serial primary key,
+Nome varchar(100) not null,
+Nick varchar(50) unique not null,
+DataNascimento date not null,
+Senha varchar(255) not null,
+Tipo varchar(20) not null default 'Aluno',
+PontuacaoTotal int not null default 0
+);
+
+
+create table Pergunta (
+Id serial primary key,
+Enunciado text not null,
+Tipo varchar(20) not null,
+Nivel varchar(20) not null,
+Tema varchar(50) not null,
+pontuacao int not null
+);
+
+create table Alternativa (
+Id serial primary key,
+PerguntaId int not null,
+Texto text not null,
+correta boolean not null,
+constraint FK_Alternativa_Pergunta 
+foreign key (PerguntaId)
+references Pergunta(Id)
+);
+
+create table Partida (
+Id serial primary key,
+UsuarioId int not null,
+DataHora timestamp not null default 
+current_timestamp,
+Pontuacao int not null default 0,
+constraint FK_Partida_Usuario
+foreign key (UsuarioId)
+references Usuario(Id)
+)
+
+
+select * from Usuario
+
+
+create table Resposta (
+Id serial primary key,
+PartidaId int not null,
+PerguntaId int not null,
+Acertou boolean not null,
+PontuacaoGanha int not null default 0,
+constraint FK_Resposta_Partida
+foreign key (PartidaId)
+references Partida(Id),
+constraint FK_Resposta_Pergunta
+foreign key (PerguntaId)
+references Pergunta(Id)
+);
+
+
+create table Conquistas (
+Id serial primary key,
+Nome varchar(100) not null,
+Descricao text not null,
+Icone varchar(255)
+);
+
+
+create table UsuarioConquista (
+Id serial primary key,
+UsuarioId int not null,
+ConquistasId int not null,
+DataConquista timestamp not null default
+current_timestamp,
+foreign key (UsuarioId)
+references Usuario(Id),
+foreign key (ConquistasId)
+references Conquistas(Id)
+);
+
+
+
+
+
+
+
+
+
+
