@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTelaMenuAdmin));
             btnVerRanking = new Button();
             btnCadastrarPerguntasQuiz = new Button();
             SuspendLayout();
@@ -66,6 +67,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(btnCadastrarPerguntasQuiz);
             Controls.Add(btnVerRanking);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmTelaMenuAdmin";
             Text = "FrmTelaMenuAdmin";
             Load += FrmTelaMenuAdmin_Load;

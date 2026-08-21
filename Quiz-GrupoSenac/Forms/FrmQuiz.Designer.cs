@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmQuiz));
             lblNickQuiz = new Label();
             lblNivelQuiz = new Label();
             lblValorQuiz = new Label();
@@ -180,6 +181,7 @@
             Controls.Add(lblValorQuiz);
             Controls.Add(lblNivelQuiz);
             Controls.Add(lblNickQuiz);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmQuiz";
             Text = "FrmQuiz";
             Load += FrmQuiz_Load;
