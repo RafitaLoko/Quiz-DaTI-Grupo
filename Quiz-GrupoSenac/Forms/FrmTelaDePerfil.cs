@@ -24,7 +24,9 @@ namespace Quiz_GrupoSenac
 
         private void btnVoltarPerfil_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
+            frmMenuPrincipal.ShowDialog();
         }
     }
 }
