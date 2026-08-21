@@ -43,9 +43,8 @@
             lblNicknamePerfil.AutoSize = true;
             lblNicknamePerfil.Location = new Point(22, 19);
             lblNicknamePerfil.Name = "lblNicknamePerfil";
-            lblNicknamePerfil.Size = new Size(90, 25);
+            lblNicknamePerfil.Size = new Size(0, 25);
             lblNicknamePerfil.TabIndex = 0;
-            lblNicknamePerfil.Text = "Nickname";
             // 
             // lblNivelPerfil
             // 

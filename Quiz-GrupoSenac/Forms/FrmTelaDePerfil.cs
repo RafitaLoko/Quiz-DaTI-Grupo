@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Quiz_GrupoSenac.Modelos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,16 @@ namespace Quiz_GrupoSenac
 
         private void FrmTelaDePerfil_Load(object sender, EventArgs e)
         {
+
+
+            lblNicknamePerfil.Text = Sessao.UsuarioLogado.Nick;
+            //lblNivelPerfil.Text = Sessao.UsuarioLogado.
+            //lblPontuacaoTotalPerfil.Text = Sessao.UsuarioLogado.PontuacaoTotal;
+            //lblAcertosPerfil.Text = Sessao.UsuarioLogado.
+            //lblPerguntasRespondidasPerfil.Text = Sessao.UsuarioLogado.
+            //lblMaiorSequenciaAcertosPerfil.Text = Sessao.UsuarioLogado.
+            //lblConquistasPerfil.Text = Sessao.UsuarioLogado.
+
 
         }
 
