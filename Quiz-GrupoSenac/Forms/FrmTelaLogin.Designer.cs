@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTelaLogin));
             txtNick = new TextBox();
             txtSenha = new TextBox();
             btnEntrar = new Button();
@@ -100,6 +101,7 @@
             Controls.Add(btnEntrar);
             Controls.Add(txtSenha);
             Controls.Add(txtNick);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmTelaLogin";
             Text = "Tela de Login";
             Load += FrmTelaLogin_Load;

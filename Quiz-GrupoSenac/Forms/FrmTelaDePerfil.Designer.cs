@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTelaDePerfil));
             lblNicknamePerfil = new Label();
             lblNivelPerfil = new Label();
             lblPontuacaoTotalPerfil = new Label();
@@ -127,6 +128,7 @@
             Controls.Add(lblPontuacaoTotalPerfil);
             Controls.Add(lblNivelPerfil);
             Controls.Add(lblNicknamePerfil);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmTelaDePerfil";
             Text = "FrmTelaDePerfil";
             Load += FrmTelaDePerfil_Load;

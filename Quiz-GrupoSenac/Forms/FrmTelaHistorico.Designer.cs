@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTelaHistorico));
             dgvHistorico = new DataGridView();
             btnVoltarTelaHistorico = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvHistorico).BeginInit();
@@ -64,6 +65,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(btnVoltarTelaHistorico);
             Controls.Add(dgvHistorico);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmTelaHistorico";
             Text = "FrmTelaHistorico";
             Load += FrmTelaHistorico_Load;

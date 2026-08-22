@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmComoJogar));
             label1 = new Label();
             btnVoltar = new Button();
             label2 = new Label();
@@ -155,6 +156,7 @@
             Controls.Add(label2);
             Controls.Add(btnVoltar);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmComoJogar";
             Text = "Como Jogar";
             Load += FrmComoJogar_Load;
