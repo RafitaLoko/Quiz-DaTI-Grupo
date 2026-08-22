@@ -27,7 +27,9 @@ namespace Quiz_GrupoSenac
 
         private void btnVerRanking_Click(object sender, EventArgs e)
         {
-           // Sessao.UsuarioLogado.Nick;
+            this.Hide();
+            FrmRanking frmRanking = new FrmRanking();
+            frmRanking.ShowDialog();
         }
 
         private void btnHistorico_Click(object sender, EventArgs e)

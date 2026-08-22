@@ -5,10 +5,20 @@ Nome varchar(100) not null,
 Nick varchar(50) unique not null,
 DataNascimento date not null,
 Senha varchar(255) not null,
-Tipo varchar(20) not null default 'Aluno',
-PontuacaoTotal int not null default 0
+Tipo varchar(20) not null default 'Aluno'
 );
 
+create table UsuarioRanking (
+UsuarioId int not null,
+PontuacaoTotal int not null default 0,
+NumeroAcertos int not null default 0,
+totalPerguntasRespondidas int not null,
+acertoConsecutivo int not null,
+temamaisAcertado varchar(100) not null
+constraint FK_UsuarioRanking_Usuario
+foreign key (UsuarioId)
+references Usuario(Id)
+);
 
 create table Pergunta (
 Id serial primary key,
@@ -38,10 +48,7 @@ Pontuacao int not null default 0,
 constraint FK_Partida_Usuario
 foreign key (UsuarioId)
 references Usuario(Id)
-)
-
-
-select * from Usuario
+);
 
 
 create table Resposta (
@@ -78,13 +85,5 @@ references Usuario(Id),
 foreign key (ConquistasId)
 references Conquistas(Id)
 );
-
-
-
-
-
-
-
-
 
 
