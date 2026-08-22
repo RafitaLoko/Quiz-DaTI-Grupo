@@ -47,9 +47,8 @@
             lblNickQuiz.BackColor = Color.Yellow;
             lblNickQuiz.Location = new Point(12, 9);
             lblNickQuiz.Name = "lblNickQuiz";
-            lblNickQuiz.Size = new Size(46, 25);
+            lblNickQuiz.Size = new Size(0, 25);
             lblNickQuiz.TabIndex = 0;
-            lblNickQuiz.Text = "Nick";
             lblNickQuiz.Click += lblNickQuiz_Click;
             // 
             // lblNivelQuiz
