@@ -44,19 +44,23 @@
             // 
             // Voltar
             // 
-            Voltar.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Voltar.Location = new Point(323, 380);
+            Voltar.BackColor = Color.PaleGreen;
+            Voltar.FlatAppearance.BorderColor = Color.Red;
+            Voltar.FlatStyle = FlatStyle.Flat;
+            Voltar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Voltar.Location = new Point(343, 380);
             Voltar.Name = "Voltar";
-            Voltar.Size = new Size(140, 58);
+            Voltar.Size = new Size(140, 42);
             Voltar.TabIndex = 1;
             Voltar.Text = "Voltar";
-            Voltar.UseVisualStyleBackColor = true;
+            Voltar.UseVisualStyleBackColor = false;
             Voltar.Click += Voltar_Click;
             // 
             // FrmRanking
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.PaleGoldenrod;
             ClientSize = new Size(800, 450);
             Controls.Add(Voltar);
             Controls.Add(dataGridView1);
