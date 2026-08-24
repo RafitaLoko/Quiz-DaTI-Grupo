@@ -25,12 +25,13 @@ namespace Quiz_GrupoSenac
 
         private void FrmQuiz_Load(object sender, EventArgs e)
         {
+            lblNickQuiz.Text = Sessao.UsuarioLogado.Nick;
 
         }
 
         private void lblNickQuiz_Click(object sender, EventArgs e)
         {
-            
+         
         }
     }
 }

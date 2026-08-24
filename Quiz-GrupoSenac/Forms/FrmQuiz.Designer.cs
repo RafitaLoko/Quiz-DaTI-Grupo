@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmQuiz));
             lblNickQuiz = new Label();
             lblNivelQuiz = new Label();
             lblValorQuiz = new Label();
@@ -47,9 +48,8 @@
             lblNickQuiz.BackColor = Color.Yellow;
             lblNickQuiz.Location = new Point(12, 9);
             lblNickQuiz.Name = "lblNickQuiz";
-            lblNickQuiz.Size = new Size(46, 25);
+            lblNickQuiz.Size = new Size(0, 25);
             lblNickQuiz.TabIndex = 0;
-            lblNickQuiz.Text = "Nick";
             lblNickQuiz.Click += lblNickQuiz_Click;
             // 
             // lblNivelQuiz
@@ -180,6 +180,7 @@
             Controls.Add(lblValorQuiz);
             Controls.Add(lblNivelQuiz);
             Controls.Add(lblNickQuiz);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmQuiz";
             Text = "FrmQuiz";
             Load += FrmQuiz_Load;

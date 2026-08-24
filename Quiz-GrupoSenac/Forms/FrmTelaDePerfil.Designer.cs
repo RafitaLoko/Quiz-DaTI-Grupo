@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTelaDePerfil));
             lblNicknamePerfil = new Label();
             lblNivelPerfil = new Label();
             lblPontuacaoTotalPerfil = new Label();
@@ -43,9 +44,8 @@
             lblNicknamePerfil.AutoSize = true;
             lblNicknamePerfil.Location = new Point(22, 19);
             lblNicknamePerfil.Name = "lblNicknamePerfil";
-            lblNicknamePerfil.Size = new Size(90, 25);
+            lblNicknamePerfil.Size = new Size(0, 25);
             lblNicknamePerfil.TabIndex = 0;
-            lblNicknamePerfil.Text = "Nickname";
             // 
             // lblNivelPerfil
             // 
@@ -128,6 +128,7 @@
             Controls.Add(lblPontuacaoTotalPerfil);
             Controls.Add(lblNivelPerfil);
             Controls.Add(lblNicknamePerfil);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmTelaDePerfil";
             Text = "FrmTelaDePerfil";
             Load += FrmTelaDePerfil_Load;

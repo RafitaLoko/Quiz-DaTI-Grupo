@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTelaDeCadastro));
             lblNomeCompletoTelaCadastro = new Label();
             txtNomeCompletoTelaCadastro = new TextBox();
             lblNicknameTelaCadastro = new Label();
@@ -169,6 +170,7 @@
             Controls.Add(lblNicknameTelaCadastro);
             Controls.Add(txtNomeCompletoTelaCadastro);
             Controls.Add(lblNomeCompletoTelaCadastro);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmTelaDeCadastro";
             Text = "FrmTelaDeCadastro";
             Load += FrmTelaDeCadastro_Load;

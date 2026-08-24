@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuPrincipal));
             btnIniciar = new Button();
             btnVerRanking = new Button();
             btnHistorico = new Button();
@@ -111,6 +112,7 @@
             Controls.Add(btnHistorico);
             Controls.Add(btnVerRanking);
             Controls.Add(btnIniciar);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmMenuPrincipal";
             Text = "FrmMenuPrincipal";
             Load += FrmMenuPrincipal_Load;
