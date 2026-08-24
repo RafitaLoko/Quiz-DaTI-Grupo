@@ -37,7 +37,11 @@ namespace Quiz_GrupoSenac.Repositories
                         Nick,
                         DataNascimento,
                         Senha,
+<<<<<<< HEAD
                         Tipo                       
+=======
+                        Tipo
+>>>>>>> d84e90fee1d095039d6e0de0c3993e9a43cd3ed2
                     FROM
                         Usuario
                     WHERE
