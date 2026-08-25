@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRanking));
             dataGridView1 = new DataGridView();
             Voltar = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -64,6 +65,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(Voltar);
             Controls.Add(dataGridView1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmRanking";
             Text = "TelaRanking";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

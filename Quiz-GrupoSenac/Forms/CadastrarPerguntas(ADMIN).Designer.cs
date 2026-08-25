@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarPerguntas_ADMIN_));
             lblEnunciadoDaPergunta = new Label();
             txtEnuciado = new TextBox();
             lblTipoPergunta = new Label();
@@ -298,6 +299,7 @@
             Controls.Add(lblTipoPergunta);
             Controls.Add(txtEnuciado);
             Controls.Add(lblEnunciadoDaPergunta);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "CadastrarPerguntas_ADMIN_";
             Text = "CadastrarPerguntas_ADMIN_";
             Load += CadastrarPerguntas_ADMIN__Load;
