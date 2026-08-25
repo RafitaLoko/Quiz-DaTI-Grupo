@@ -25,5 +25,35 @@ namespace Quiz_GrupoSenac.Repositories
 
         }
 
+        public static async void BuscarPorEnunciado(string enunciado)
+        {
+            var pergunta = await conexao.Conectar().QueryFirstOrDefaultAsync<Pergunta>(
+           @"
+              SELECT 
+                Id,
+                Enunciado,
+                Tipo,
+                Nivel,
+                Tema,
+                Pontuacao
+              FROM
+                Pergunta
+              WHERE
+                Enunciado = @Enunciado
+
+           ",
+            new
+            {
+                Enunciado = enunciado
+            }
+            );
+            
+
+        }
+
+
+
+
+
     }
 }

@@ -29,7 +29,10 @@ namespace Quiz_GrupoSenac.Forms
 
         private void btnCadastrarPerguntasQuiz_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            CadastrarPerguntas_ADMIN_ cadastrarPerguntas_ADMIN = new CadastrarPerguntas_ADMIN_();
+            cadastrarPerguntas_ADMIN.ShowDialog();
         }
+        
     }
 }

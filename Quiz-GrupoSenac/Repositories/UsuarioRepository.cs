@@ -18,8 +18,8 @@ namespace Quiz_GrupoSenac.Repositories
         {
             await conexao.Conectar().QueryAsync(
                 @"
-                    INSERT INTO Usuario (Nome, Nick, DataNascimento, Senha, Tipo, PontuacaoTotal)
-                    VALUES (@Nome, @Nick, @DataNascimento, @Senha, @Tipo, @PontuacaoTotal)
+                    INSERT INTO Usuario (Nome, Nick, DataNascimento, Senha, Tipo)
+                    VALUES (@Nome, @Nick, @DataNascimento, @Senha, @Tipo)
                 ",
                 usuario
                  );
@@ -37,8 +37,7 @@ namespace Quiz_GrupoSenac.Repositories
                         Nick,
                         DataNascimento,
                         Senha,
-                        Tipo,
-                        PontuacaoTotal
+                        Tipo                     
                     FROM
                         Usuario
                     WHERE
