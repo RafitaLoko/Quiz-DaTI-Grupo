@@ -16,5 +16,20 @@ namespace Quiz_GrupoSenac.Forms
         {
             InitializeComponent();
         }
+
+        private void btnCadastrarPergunta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CadastrarPerguntas_ADMIN__Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
