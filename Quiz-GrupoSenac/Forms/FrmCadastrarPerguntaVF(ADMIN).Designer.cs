@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadastrarPerguntaVF_ADMIN_));
             btnCadastrarPergunta = new Button();
             btnLimpar = new Button();
             label2 = new Label();
@@ -208,6 +209,7 @@
             Controls.Add(lblTipoPergunta);
             Controls.Add(txtEnuciado);
             Controls.Add(lblEnunciadoDaPergunta);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmCadastrarPerguntaVF_ADMIN_";
             Text = "FrmCadastrarPerguntaVF_ADMIN_";
             ResumeLayout(false);
