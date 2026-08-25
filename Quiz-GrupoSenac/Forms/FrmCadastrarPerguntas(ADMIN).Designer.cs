@@ -31,14 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarPerguntas_ADMIN_));
             lblEnunciadoDaPergunta = new Label();
             txtEnuciado = new TextBox();
-            lblTipoPergunta = new Label();
-            dudTipoPergunta = new DomainUpDown();
-            lblNivelPergunta = new Label();
-            dudNivelPergunta = new DomainUpDown();
-            lblTemaPergunta = new Label();
-            dudTemaPergunta = new DomainUpDown();
-            lblPontuaçãoPerguntas = new Label();
-            dudPontuacaoPergunta = new DomainUpDown();
             lblAlternativas = new Label();
             label1 = new Label();
             lblAlternativa1 = new Label();
@@ -53,12 +45,20 @@
             dudRespostaCorreta = new DomainUpDown();
             btnLimpar = new Button();
             btnCadastrarPergunta = new Button();
+            cbdudPontuacaoPergunta = new ComboBox();
+            cbTemaPergunta = new ComboBox();
+            cbNivelPergunta = new ComboBox();
+            cbTipoPergunta = new ComboBox();
+            lblPontuaçãoPerguntas = new Label();
+            lblTemaPergunta = new Label();
+            lblNivelPergunta = new Label();
+            lblTipoPergunta = new Label();
             SuspendLayout();
             // 
             // lblEnunciadoDaPergunta
             // 
             lblEnunciadoDaPergunta.AutoSize = true;
-            lblEnunciadoDaPergunta.Location = new Point(2, 2);
+            lblEnunciadoDaPergunta.Location = new Point(12, 3);
             lblEnunciadoDaPergunta.Name = "lblEnunciadoDaPergunta";
             lblEnunciadoDaPergunta.Size = new Size(194, 25);
             lblEnunciadoDaPergunta.TabIndex = 0;
@@ -67,76 +67,12 @@
             // txtEnuciado
             // 
             txtEnuciado.Font = new Font("Segoe UI", 9F);
-            txtEnuciado.Location = new Point(2, 30);
+            txtEnuciado.Location = new Point(12, 31);
             txtEnuciado.Multiline = true;
             txtEnuciado.Name = "txtEnuciado";
             txtEnuciado.PlaceholderText = "Escreva a Pergunta";
             txtEnuciado.Size = new Size(311, 138);
             txtEnuciado.TabIndex = 1;
-            // 
-            // lblTipoPergunta
-            // 
-            lblTipoPergunta.AutoSize = true;
-            lblTipoPergunta.Location = new Point(2, 189);
-            lblTipoPergunta.Name = "lblTipoPergunta";
-            lblTipoPergunta.Size = new Size(147, 25);
-            lblTipoPergunta.TabIndex = 2;
-            lblTipoPergunta.Text = "Tipo de Pergunta";
-            // 
-            // dudTipoPergunta
-            // 
-            dudTipoPergunta.Location = new Point(2, 217);
-            dudTipoPergunta.Name = "dudTipoPergunta";
-            dudTipoPergunta.Size = new Size(180, 31);
-            dudTipoPergunta.TabIndex = 3;
-            // 
-            // lblNivelPergunta
-            // 
-            lblNivelPergunta.AutoSize = true;
-            lblNivelPergunta.Location = new Point(2, 269);
-            lblNivelPergunta.Name = "lblNivelPergunta";
-            lblNivelPergunta.Size = new Size(153, 25);
-            lblNivelPergunta.TabIndex = 4;
-            lblNivelPergunta.Text = "Nivel da pergunta";
-            // 
-            // dudNivelPergunta
-            // 
-            dudNivelPergunta.Location = new Point(2, 297);
-            dudNivelPergunta.Name = "dudNivelPergunta";
-            dudNivelPergunta.Size = new Size(180, 31);
-            dudNivelPergunta.TabIndex = 5;
-            // 
-            // lblTemaPergunta
-            // 
-            lblTemaPergunta.AutoSize = true;
-            lblTemaPergunta.Location = new Point(2, 347);
-            lblTemaPergunta.Name = "lblTemaPergunta";
-            lblTemaPergunta.Size = new Size(53, 25);
-            lblTemaPergunta.TabIndex = 6;
-            lblTemaPergunta.Text = "Tema";
-            // 
-            // dudTemaPergunta
-            // 
-            dudTemaPergunta.Location = new Point(2, 375);
-            dudTemaPergunta.Name = "dudTemaPergunta";
-            dudTemaPergunta.Size = new Size(180, 31);
-            dudTemaPergunta.TabIndex = 7;
-            // 
-            // lblPontuaçãoPerguntas
-            // 
-            lblPontuaçãoPerguntas.AutoSize = true;
-            lblPontuaçãoPerguntas.Location = new Point(2, 418);
-            lblPontuaçãoPerguntas.Name = "lblPontuaçãoPerguntas";
-            lblPontuaçãoPerguntas.Size = new Size(95, 25);
-            lblPontuaçãoPerguntas.TabIndex = 8;
-            lblPontuaçãoPerguntas.Text = "Pontuação";
-            // 
-            // dudPontuacaoPergunta
-            // 
-            dudPontuacaoPergunta.Location = new Point(2, 446);
-            dudPontuacaoPergunta.Name = "dudPontuacaoPergunta";
-            dudPontuacaoPergunta.Size = new Size(180, 31);
-            dudPontuacaoPergunta.TabIndex = 9;
             // 
             // lblAlternativas
             // 
@@ -269,12 +205,88 @@
             btnCadastrarPergunta.UseVisualStyleBackColor = false;
             btnCadastrarPergunta.Click += btnCadastrarPergunta_Click;
             // 
+            // cbdudPontuacaoPergunta
+            // 
+            cbdudPontuacaoPergunta.FormattingEnabled = true;
+            cbdudPontuacaoPergunta.Location = new Point(12, 451);
+            cbdudPontuacaoPergunta.Name = "cbdudPontuacaoPergunta";
+            cbdudPontuacaoPergunta.Size = new Size(182, 33);
+            cbdudPontuacaoPergunta.TabIndex = 62;
+            // 
+            // cbTemaPergunta
+            // 
+            cbTemaPergunta.FormattingEnabled = true;
+            cbTemaPergunta.Location = new Point(12, 380);
+            cbTemaPergunta.Name = "cbTemaPergunta";
+            cbTemaPergunta.Size = new Size(182, 33);
+            cbTemaPergunta.TabIndex = 61;
+            // 
+            // cbNivelPergunta
+            // 
+            cbNivelPergunta.FormattingEnabled = true;
+            cbNivelPergunta.Location = new Point(12, 302);
+            cbNivelPergunta.Name = "cbNivelPergunta";
+            cbNivelPergunta.Size = new Size(182, 33);
+            cbNivelPergunta.TabIndex = 60;
+            // 
+            // cbTipoPergunta
+            // 
+            cbTipoPergunta.FormattingEnabled = true;
+            cbTipoPergunta.Location = new Point(14, 222);
+            cbTipoPergunta.Name = "cbTipoPergunta";
+            cbTipoPergunta.Size = new Size(182, 33);
+            cbTipoPergunta.TabIndex = 59;
+            // 
+            // lblPontuaçãoPerguntas
+            // 
+            lblPontuaçãoPerguntas.AutoSize = true;
+            lblPontuaçãoPerguntas.Location = new Point(14, 423);
+            lblPontuaçãoPerguntas.Name = "lblPontuaçãoPerguntas";
+            lblPontuaçãoPerguntas.Size = new Size(95, 25);
+            lblPontuaçãoPerguntas.TabIndex = 58;
+            lblPontuaçãoPerguntas.Text = "Pontuação";
+            // 
+            // lblTemaPergunta
+            // 
+            lblTemaPergunta.AutoSize = true;
+            lblTemaPergunta.Location = new Point(14, 352);
+            lblTemaPergunta.Name = "lblTemaPergunta";
+            lblTemaPergunta.Size = new Size(53, 25);
+            lblTemaPergunta.TabIndex = 57;
+            lblTemaPergunta.Text = "Tema";
+            // 
+            // lblNivelPergunta
+            // 
+            lblNivelPergunta.AutoSize = true;
+            lblNivelPergunta.Location = new Point(14, 274);
+            lblNivelPergunta.Name = "lblNivelPergunta";
+            lblNivelPergunta.Size = new Size(153, 25);
+            lblNivelPergunta.TabIndex = 56;
+            lblNivelPergunta.Text = "Nivel da pergunta";
+            // 
+            // lblTipoPergunta
+            // 
+            lblTipoPergunta.AutoSize = true;
+            lblTipoPergunta.Location = new Point(14, 194);
+            lblTipoPergunta.Name = "lblTipoPergunta";
+            lblTipoPergunta.Size = new Size(147, 25);
+            lblTipoPergunta.TabIndex = 55;
+            lblTipoPergunta.Text = "Tipo de Pergunta";
+            // 
             // CadastrarPerguntas_ADMIN_
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(800, 515);
+            Controls.Add(cbdudPontuacaoPergunta);
+            Controls.Add(cbTemaPergunta);
+            Controls.Add(cbNivelPergunta);
+            Controls.Add(cbTipoPergunta);
+            Controls.Add(lblPontuaçãoPerguntas);
+            Controls.Add(lblTemaPergunta);
+            Controls.Add(lblNivelPergunta);
+            Controls.Add(lblTipoPergunta);
             Controls.Add(btnCadastrarPergunta);
             Controls.Add(btnLimpar);
             Controls.Add(dudRespostaCorreta);
@@ -289,14 +301,6 @@
             Controls.Add(lblAlternativa1);
             Controls.Add(label1);
             Controls.Add(lblAlternativas);
-            Controls.Add(dudPontuacaoPergunta);
-            Controls.Add(lblPontuaçãoPerguntas);
-            Controls.Add(dudTemaPergunta);
-            Controls.Add(lblTemaPergunta);
-            Controls.Add(dudNivelPergunta);
-            Controls.Add(lblNivelPergunta);
-            Controls.Add(dudTipoPergunta);
-            Controls.Add(lblTipoPergunta);
             Controls.Add(txtEnuciado);
             Controls.Add(lblEnunciadoDaPergunta);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -311,14 +315,6 @@
 
         private Label lblEnunciadoDaPergunta;
         private TextBox txtEnuciado;
-        private Label lblTipoPergunta;
-        private DomainUpDown dudTipoPergunta;
-        private Label lblNivelPergunta;
-        private DomainUpDown dudNivelPergunta;
-        private Label lblTemaPergunta;
-        private DomainUpDown dudTemaPergunta;
-        private Label lblPontuaçãoPerguntas;
-        private DomainUpDown dudPontuacaoPergunta;
         private Label lblAlternativas;
         private Label label1;
         private Label lblAlternativa1;
@@ -333,5 +329,13 @@
         private DomainUpDown dudRespostaCorreta;
         private Button btnLimpar;
         private Button btnCadastrarPergunta;
+        private ComboBox cbdudPontuacaoPergunta;
+        private ComboBox cbTemaPergunta;
+        private ComboBox cbNivelPergunta;
+        private ComboBox cbTipoPergunta;
+        private Label lblPontuaçãoPerguntas;
+        private Label lblTemaPergunta;
+        private Label lblNivelPergunta;
+        private Label lblTipoPergunta;
     }
 }
