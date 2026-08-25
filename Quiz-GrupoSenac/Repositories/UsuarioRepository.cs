@@ -37,7 +37,7 @@ namespace Quiz_GrupoSenac.Repositories
                         Nick,
                         DataNascimento,
                         Senha,
-                        Tipo
+                        Tipo                     
                     FROM
                         Usuario
                     WHERE
