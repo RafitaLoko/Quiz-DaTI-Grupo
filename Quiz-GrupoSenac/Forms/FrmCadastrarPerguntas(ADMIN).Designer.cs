@@ -42,7 +42,6 @@
             txtAlternativa3 = new TextBox();
             txtAlternativa4 = new TextBox();
             label2 = new Label();
-            dudRespostaCorreta = new DomainUpDown();
             btnLimpar = new Button();
             btnCadastrarPergunta = new Button();
             cbdudPontuacaoPergunta = new ComboBox();
@@ -53,6 +52,7 @@
             lblTemaPergunta = new Label();
             lblNivelPergunta = new Label();
             lblTipoPergunta = new Label();
+            cbRespostaCorreta = new ComboBox();
             SuspendLayout();
             // 
             // lblEnunciadoDaPergunta
@@ -172,13 +172,6 @@
             label2.TabIndex = 20;
             label2.Text = "Resposta correta";
             // 
-            // dudRespostaCorreta
-            // 
-            dudRespostaCorreta.Location = new Point(414, 341);
-            dudRespostaCorreta.Name = "dudRespostaCorreta";
-            dudRespostaCorreta.Size = new Size(303, 31);
-            dudRespostaCorreta.TabIndex = 21;
-            // 
             // btnLimpar
             // 
             btnLimpar.BackColor = SystemColors.Highlight;
@@ -273,12 +266,21 @@
             lblTipoPergunta.TabIndex = 55;
             lblTipoPergunta.Text = "Tipo de Pergunta";
             // 
+            // cbRespostaCorreta
+            // 
+            cbRespostaCorreta.FormattingEnabled = true;
+            cbRespostaCorreta.Location = new Point(468, 332);
+            cbRespostaCorreta.Name = "cbRespostaCorreta";
+            cbRespostaCorreta.Size = new Size(182, 33);
+            cbRespostaCorreta.TabIndex = 63;
+            // 
             // CadastrarPerguntas_ADMIN_
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(800, 515);
+            Controls.Add(cbRespostaCorreta);
             Controls.Add(cbdudPontuacaoPergunta);
             Controls.Add(cbTemaPergunta);
             Controls.Add(cbNivelPergunta);
@@ -289,7 +291,6 @@
             Controls.Add(lblTipoPergunta);
             Controls.Add(btnCadastrarPergunta);
             Controls.Add(btnLimpar);
-            Controls.Add(dudRespostaCorreta);
             Controls.Add(label2);
             Controls.Add(txtAlternativa4);
             Controls.Add(txtAlternativa3);
@@ -326,7 +327,6 @@
         private TextBox txtAlternativa3;
         private TextBox txtAlternativa4;
         private Label label2;
-        private DomainUpDown dudRespostaCorreta;
         private Button btnLimpar;
         private Button btnCadastrarPergunta;
         private ComboBox cbdudPontuacaoPergunta;
@@ -337,5 +337,6 @@
         private Label lblTemaPergunta;
         private Label lblNivelPergunta;
         private Label lblTipoPergunta;
+        private ComboBox cbRespostaCorreta;
     }
 }
