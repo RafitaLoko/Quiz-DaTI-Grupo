@@ -31,16 +31,16 @@ namespace Quiz_GrupoSenac
 
             Usuario usuario = await UsuarioRepository.BuscarPorNick(txtNick.Text);
 
-            //if (txtNick.Text == "admin" && txtSenha.Text == "1234")
-            //{
-            //    this.Hide();
-            //    FrmTelaMenuAdmin frmTelaMenuAdmin = new FrmTelaMenuAdmin();
-            //    frmTelaMenuAdmin.ShowDialog();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Nick ou Senha invalidos");
-            //}
+          if (txtNick.Text == "admin" && txtSenha.Text == "1234")
+            {
+                this.Hide();
+                FrmTelaMenuAdmin frmTelaMenuAdmin = new FrmTelaMenuAdmin();
+                frmTelaMenuAdmin.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Nick ou Senha invalidos");
+            }
 
 
 
