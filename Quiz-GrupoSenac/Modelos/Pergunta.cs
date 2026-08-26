@@ -20,7 +20,7 @@ namespace Quiz_GrupoSenac.Modelos
 
         public int Pontuacao { get; set; }
 
-        public List<Alternativa> alternativas { get; set; }
+        public List<Alternativa> Alternativas { get; set; }
 
 
     }

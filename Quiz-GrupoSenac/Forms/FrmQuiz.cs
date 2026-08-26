@@ -8,11 +8,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Quiz_GrupoSenac.Repositories;
+
 
 namespace Quiz_GrupoSenac
 {
     public partial class FrmQuiz : Form
     {
+        List<Pergunta> perguntas;
+        int numeroPergunta = 0;
+
+        PerguntaRepository repository =
+            new PerguntaRepository();
+
+
         public FrmQuiz()
         {
             InitializeComponent();
@@ -26,6 +35,9 @@ namespace Quiz_GrupoSenac
         private void FrmQuiz_Load(object sender, EventArgs e)
         {
             lblNickQuiz.Text = Sessao.UsuarioLogado.Nick;
+
+           
+
 
         }
 
