@@ -8,6 +8,9 @@
     <Compile Update="Forms\FrmCadastrarPerguntaVF%28ADMIN%29.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\FrmQuizVF.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\FrmRanking.cs">
       <SubType>Form</SubType>
     </Compile>
