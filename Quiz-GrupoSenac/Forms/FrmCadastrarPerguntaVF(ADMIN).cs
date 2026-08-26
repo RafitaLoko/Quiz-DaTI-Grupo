@@ -16,5 +16,28 @@ namespace Quiz_GrupoSenac.Forms
         {
             InitializeComponent();
         }
+
+        private void FrmCadastrarPerguntaVF_ADMIN__Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtEnuciado.Clear();
+            
+
+            cbTipoPergunta.SelectedIndex = -1;
+            cbNivelPergunta.SelectedIndex = -1;
+            cbTemaPergunta.SelectedIndex = -1;
+            cbPontuacaoPergunta.SelectedIndex = -1;
+
+
+            rbVerdadeiro.Checked = false;
+            rbFalso.Checked = false;
+
+
+            txtEnuciado.Focus();
+        }
     }
 }

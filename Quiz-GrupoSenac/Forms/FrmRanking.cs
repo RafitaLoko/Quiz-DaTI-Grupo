@@ -21,6 +21,10 @@ namespace Quiz_GrupoSenac
         {
             this.Close();
         }
-        
+
+        private void FrmRanking_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -43,7 +43,7 @@
             cbTipoPergunta = new ComboBox();
             cbNivelPergunta = new ComboBox();
             cbTemaPergunta = new ComboBox();
-            cbdudPontuacaoPergunta = new ComboBox();
+            cbPontuacaoPergunta = new ComboBox();
             SuspendLayout();
             // 
             // btnCadastrarPergunta
@@ -69,6 +69,7 @@
             btnLimpar.TabIndex = 46;
             btnLimpar.Text = "Limpar";
             btnLimpar.UseVisualStyleBackColor = false;
+            btnLimpar.Click += btnLimpar_Click;
             // 
             // label2
             // 
@@ -180,13 +181,13 @@
             cbTemaPergunta.Size = new Size(182, 33);
             cbTemaPergunta.TabIndex = 53;
             // 
-            // cbdudPontuacaoPergunta
+            // cbPontuacaoPergunta
             // 
-            cbdudPontuacaoPergunta.FormattingEnabled = true;
-            cbdudPontuacaoPergunta.Location = new Point(10, 446);
-            cbdudPontuacaoPergunta.Name = "cbdudPontuacaoPergunta";
-            cbdudPontuacaoPergunta.Size = new Size(182, 33);
-            cbdudPontuacaoPergunta.TabIndex = 54;
+            cbPontuacaoPergunta.FormattingEnabled = true;
+            cbPontuacaoPergunta.Location = new Point(10, 446);
+            cbPontuacaoPergunta.Name = "cbPontuacaoPergunta";
+            cbPontuacaoPergunta.Size = new Size(182, 33);
+            cbPontuacaoPergunta.TabIndex = 54;
             // 
             // FrmCadastrarPerguntaVF_ADMIN_
             // 
@@ -194,7 +195,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(800, 500);
-            Controls.Add(cbdudPontuacaoPergunta);
+            Controls.Add(cbPontuacaoPergunta);
             Controls.Add(cbTemaPergunta);
             Controls.Add(cbNivelPergunta);
             Controls.Add(cbTipoPergunta);
@@ -212,6 +213,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmCadastrarPerguntaVF_ADMIN_";
             Text = "FrmCadastrarPerguntaVF_ADMIN_";
+            Load += FrmCadastrarPerguntaVF_ADMIN__Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -232,6 +234,6 @@
         private ComboBox cbTipoPergunta;
         private ComboBox cbNivelPergunta;
         private ComboBox cbTemaPergunta;
-        private ComboBox cbdudPontuacaoPergunta;
+        private ComboBox cbPontuacaoPergunta;
     }
 }

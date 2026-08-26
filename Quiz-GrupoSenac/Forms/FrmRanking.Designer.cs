@@ -37,10 +37,10 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(1, -2);
+            dataGridView1.Location = new Point(12, 5);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(799, 376);
+            dataGridView1.Size = new Size(776, 369);
             dataGridView1.TabIndex = 0;
             // 
             // Voltar
@@ -48,10 +48,10 @@
             Voltar.BackColor = Color.PaleGreen;
             Voltar.FlatAppearance.BorderColor = Color.Red;
             Voltar.FlatStyle = FlatStyle.Flat;
-            Voltar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Voltar.Location = new Point(343, 380);
+            Voltar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Voltar.Location = new Point(340, 380);
             Voltar.Name = "Voltar";
-            Voltar.Size = new Size(140, 42);
+            Voltar.Size = new Size(120, 36);
             Voltar.TabIndex = 1;
             Voltar.Text = "Voltar";
             Voltar.UseVisualStyleBackColor = false;
@@ -68,6 +68,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmRanking";
             Text = "TelaRanking";
+            Load += FrmRanking_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

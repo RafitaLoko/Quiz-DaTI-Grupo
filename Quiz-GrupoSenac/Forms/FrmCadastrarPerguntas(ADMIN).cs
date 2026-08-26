@@ -24,7 +24,20 @@ namespace Quiz_GrupoSenac.Forms
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
+            txtEnuciado.Clear();
 
+            txtAlternativa1.Clear();
+            txtAlternativa2.Clear();
+            txtAlternativa3.Clear();
+            txtAlternativa4.Clear();
+
+            cbTipoPergunta.SelectedIndex = -1;
+            cbNivelPergunta.SelectedIndex = -1;
+            cbTemaPergunta.SelectedIndex = -1;
+            cbPontuacaoPergunta.SelectedIndex = -1;
+            cbRespostaCorreta.SelectedIndex = -1;
+
+            txtEnuciado.Focus();
         }
 
         private void CadastrarPerguntas_ADMIN__Load(object sender, EventArgs e)

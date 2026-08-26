@@ -44,7 +44,7 @@
             label2 = new Label();
             btnLimpar = new Button();
             btnCadastrarPergunta = new Button();
-            cbdudPontuacaoPergunta = new ComboBox();
+            cbPontuacaoPergunta = new ComboBox();
             cbTemaPergunta = new ComboBox();
             cbNivelPergunta = new ComboBox();
             cbTipoPergunta = new ComboBox();
@@ -198,13 +198,13 @@
             btnCadastrarPergunta.UseVisualStyleBackColor = false;
             btnCadastrarPergunta.Click += btnCadastrarPergunta_Click;
             // 
-            // cbdudPontuacaoPergunta
+            // cbPontuacaoPergunta
             // 
-            cbdudPontuacaoPergunta.FormattingEnabled = true;
-            cbdudPontuacaoPergunta.Location = new Point(12, 451);
-            cbdudPontuacaoPergunta.Name = "cbdudPontuacaoPergunta";
-            cbdudPontuacaoPergunta.Size = new Size(182, 33);
-            cbdudPontuacaoPergunta.TabIndex = 62;
+            cbPontuacaoPergunta.FormattingEnabled = true;
+            cbPontuacaoPergunta.Location = new Point(12, 451);
+            cbPontuacaoPergunta.Name = "cbPontuacaoPergunta";
+            cbPontuacaoPergunta.Size = new Size(182, 33);
+            cbPontuacaoPergunta.TabIndex = 62;
             // 
             // cbTemaPergunta
             // 
@@ -281,7 +281,7 @@
             BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(800, 515);
             Controls.Add(cbRespostaCorreta);
-            Controls.Add(cbdudPontuacaoPergunta);
+            Controls.Add(cbPontuacaoPergunta);
             Controls.Add(cbTemaPergunta);
             Controls.Add(cbNivelPergunta);
             Controls.Add(cbTipoPergunta);
@@ -329,7 +329,7 @@
         private Label label2;
         private Button btnLimpar;
         private Button btnCadastrarPergunta;
-        private ComboBox cbdudPontuacaoPergunta;
+        private ComboBox cbPontuacaoPergunta;
         private ComboBox cbTemaPergunta;
         private ComboBox cbNivelPergunta;
         private ComboBox cbTipoPergunta;
