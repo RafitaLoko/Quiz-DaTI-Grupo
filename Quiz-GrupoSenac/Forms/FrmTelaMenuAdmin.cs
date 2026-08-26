@@ -24,7 +24,9 @@ namespace Quiz_GrupoSenac.Forms
 
         private void btnVerRanking_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            FrmRanking frmRanking = new FrmRanking();
+            frmRanking.ShowDialog();
         }
 
         private void btnCadastrarPerguntasQuiz_Click(object sender, EventArgs e)
@@ -33,6 +35,12 @@ namespace Quiz_GrupoSenac.Forms
             CadastrarPerguntas_ADMIN_ cadastrarPerguntas_ADMIN = new CadastrarPerguntas_ADMIN_();
             cadastrarPerguntas_ADMIN.ShowDialog();
         }
-        
+
+        private void btnCadastrarPerguntasVF_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmCadastrarPerguntaVF_ADMIN_ frmCadastrarPerguntaVF_ADMIN_ = new FrmCadastrarPerguntaVF_ADMIN_();
+            frmCadastrarPerguntaVF_ADMIN_.ShowDialog();
+        }
     }
 }

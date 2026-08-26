@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTelaMenuAdmin));
             btnVerRanking = new Button();
             btnCadastrarPerguntasQuiz = new Button();
+            btnCadastrarPerguntasVF = new Button();
             SuspendLayout();
             // 
             // btnVerRanking
@@ -38,9 +39,9 @@
             btnVerRanking.BackColor = Color.Gold;
             btnVerRanking.FlatAppearance.BorderColor = Color.Blue;
             btnVerRanking.FlatStyle = FlatStyle.Flat;
-            btnVerRanking.Location = new Point(304, 122);
+            btnVerRanking.Location = new Point(293, 63);
             btnVerRanking.Name = "btnVerRanking";
-            btnVerRanking.Size = new Size(199, 59);
+            btnVerRanking.Size = new Size(212, 59);
             btnVerRanking.TabIndex = 0;
             btnVerRanking.Text = "Ranking";
             btnVerRanking.UseVisualStyleBackColor = false;
@@ -51,13 +52,26 @@
             btnCadastrarPerguntasQuiz.BackColor = Color.OrangeRed;
             btnCadastrarPerguntasQuiz.FlatAppearance.BorderColor = Color.Lime;
             btnCadastrarPerguntasQuiz.FlatStyle = FlatStyle.Flat;
-            btnCadastrarPerguntasQuiz.Location = new Point(304, 275);
+            btnCadastrarPerguntasQuiz.Location = new Point(293, 185);
             btnCadastrarPerguntasQuiz.Name = "btnCadastrarPerguntasQuiz";
-            btnCadastrarPerguntasQuiz.Size = new Size(199, 59);
+            btnCadastrarPerguntasQuiz.Size = new Size(212, 59);
             btnCadastrarPerguntasQuiz.TabIndex = 1;
             btnCadastrarPerguntasQuiz.Text = "Cadastrar Perguntas";
             btnCadastrarPerguntasQuiz.UseVisualStyleBackColor = false;
             btnCadastrarPerguntasQuiz.Click += btnCadastrarPerguntasQuiz_Click;
+            // 
+            // btnCadastrarPerguntasVF
+            // 
+            btnCadastrarPerguntasVF.BackColor = Color.Chocolate;
+            btnCadastrarPerguntasVF.FlatAppearance.BorderColor = Color.DeepPink;
+            btnCadastrarPerguntasVF.FlatStyle = FlatStyle.Flat;
+            btnCadastrarPerguntasVF.Location = new Point(293, 306);
+            btnCadastrarPerguntasVF.Name = "btnCadastrarPerguntasVF";
+            btnCadastrarPerguntasVF.Size = new Size(212, 59);
+            btnCadastrarPerguntasVF.TabIndex = 2;
+            btnCadastrarPerguntasVF.Text = "Cadastrar Perguntas VF";
+            btnCadastrarPerguntasVF.UseVisualStyleBackColor = false;
+            btnCadastrarPerguntasVF.Click += btnCadastrarPerguntasVF_Click;
             // 
             // FrmTelaMenuAdmin
             // 
@@ -65,6 +79,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.RosyBrown;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnCadastrarPerguntasVF);
             Controls.Add(btnCadastrarPerguntasQuiz);
             Controls.Add(btnVerRanking);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -78,5 +93,6 @@
 
         private Button btnVerRanking;
         private Button btnCadastrarPerguntasQuiz;
+        private Button btnCadastrarPerguntasVF;
     }
 }
