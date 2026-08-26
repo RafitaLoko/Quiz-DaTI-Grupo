@@ -56,7 +56,7 @@
             // 
             lblNivelQuiz.AutoSize = true;
             lblNivelQuiz.BackColor = Color.Yellow;
-            lblNivelQuiz.Location = new Point(645, 9);
+            lblNivelQuiz.Location = new Point(688, 9);
             lblNivelQuiz.Name = "lblNivelQuiz";
             lblNivelQuiz.Size = new Size(55, 25);
             lblNivelQuiz.TabIndex = 1;
@@ -66,7 +66,7 @@
             // 
             lblValorQuiz.AutoSize = true;
             lblValorQuiz.BackColor = Color.Yellow;
-            lblValorQuiz.Location = new Point(12, 416);
+            lblValorQuiz.Location = new Point(12, 440);
             lblValorQuiz.Name = "lblValorQuiz";
             lblValorQuiz.Size = new Size(56, 25);
             lblValorQuiz.TabIndex = 2;
@@ -77,7 +77,7 @@
             btnProximaQuiz.BackColor = Color.Pink;
             btnProximaQuiz.FlatAppearance.BorderColor = Color.Yellow;
             btnProximaQuiz.FlatStyle = FlatStyle.Flat;
-            btnProximaQuiz.Location = new Point(666, 397);
+            btnProximaQuiz.Location = new Point(705, 431);
             btnProximaQuiz.Name = "btnProximaQuiz";
             btnProximaQuiz.Size = new Size(122, 41);
             btnProximaQuiz.TabIndex = 3;
@@ -157,7 +157,7 @@
             // 
             lblPontuacaoQuiz.AutoSize = true;
             lblPontuacaoQuiz.BackColor = Color.Aquamarine;
-            lblPontuacaoQuiz.Location = new Point(404, 416);
+            lblPontuacaoQuiz.Location = new Point(404, 440);
             lblPontuacaoQuiz.Name = "lblPontuacaoQuiz";
             lblPontuacaoQuiz.Size = new Size(99, 25);
             lblPontuacaoQuiz.TabIndex = 10;

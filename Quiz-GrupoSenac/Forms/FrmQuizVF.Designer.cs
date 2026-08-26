@@ -37,6 +37,7 @@
             lblNickQuiz = new Label();
             rbVerdadeiroQuiz = new RadioButton();
             rbFalsoQuiz = new RadioButton();
+            lblTemaQuiz = new Label();
             SuspendLayout();
             // 
             // lblPontuacaoQuiz
@@ -45,9 +46,8 @@
             lblPontuacaoQuiz.BackColor = Color.Aquamarine;
             lblPontuacaoQuiz.Location = new Point(448, 416);
             lblPontuacaoQuiz.Name = "lblPontuacaoQuiz";
-            lblPontuacaoQuiz.Size = new Size(99, 25);
+            lblPontuacaoQuiz.Size = new Size(0, 25);
             lblPontuacaoQuiz.TabIndex = 21;
-            lblPontuacaoQuiz.Text = "Pontuação:";
             // 
             // lblPerguntaNumeroQuiz
             // 
@@ -55,9 +55,8 @@
             lblPerguntaNumeroQuiz.BackColor = Color.LightGoldenrodYellow;
             lblPerguntaNumeroQuiz.Location = new Point(373, 9);
             lblPerguntaNumeroQuiz.Name = "lblPerguntaNumeroQuiz";
-            lblPerguntaNumeroQuiz.Size = new Size(155, 25);
+            lblPerguntaNumeroQuiz.Size = new Size(0, 25);
             lblPerguntaNumeroQuiz.TabIndex = 20;
-            lblPerguntaNumeroQuiz.Text = "Pergunta tal de tal";
             // 
             // lblPerguntaQuiz
             // 
@@ -97,9 +96,8 @@
             lblNivelQuiz.BackColor = Color.Yellow;
             lblNivelQuiz.Location = new Point(645, 10);
             lblNivelQuiz.Name = "lblNivelQuiz";
-            lblNivelQuiz.Size = new Size(55, 25);
+            lblNivelQuiz.Size = new Size(0, 25);
             lblNivelQuiz.TabIndex = 12;
-            lblNivelQuiz.Text = "Nivel:";
             // 
             // lblNickQuiz
             // 
@@ -132,12 +130,22 @@
             rbFalsoQuiz.Text = "Falso";
             rbFalsoQuiz.UseVisualStyleBackColor = true;
             // 
+            // lblTemaQuiz
+            // 
+            lblTemaQuiz.AutoSize = true;
+            lblTemaQuiz.BackColor = Color.Turquoise;
+            lblTemaQuiz.Location = new Point(211, 417);
+            lblTemaQuiz.Name = "lblTemaQuiz";
+            lblTemaQuiz.Size = new Size(0, 25);
+            lblTemaQuiz.TabIndex = 24;
+            // 
             // FrmQuizVF
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSeaGreen;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblTemaQuiz);
             Controls.Add(rbFalsoQuiz);
             Controls.Add(rbVerdadeiroQuiz);
             Controls.Add(lblPontuacaoQuiz);
@@ -165,5 +173,6 @@
         private Label lblNickQuiz;
         private RadioButton rbVerdadeiroQuiz;
         private RadioButton rbFalsoQuiz;
+        private Label lblTemaQuiz;
     }
 }
