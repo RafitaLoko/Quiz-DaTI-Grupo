@@ -40,6 +40,7 @@
             rbResposta4 = new RadioButton();
             lblPerguntaNumeroQuiz = new Label();
             lblPontuacaoQuiz = new Label();
+            lblTemaQuiz = new Label();
             SuspendLayout();
             // 
             // lblNickQuiz
@@ -56,17 +57,16 @@
             // 
             lblNivelQuiz.AutoSize = true;
             lblNivelQuiz.BackColor = Color.Yellow;
-            lblNivelQuiz.Location = new Point(645, 9);
+            lblNivelQuiz.Location = new Point(679, 9);
             lblNivelQuiz.Name = "lblNivelQuiz";
-            lblNivelQuiz.Size = new Size(55, 25);
+            lblNivelQuiz.Size = new Size(0, 25);
             lblNivelQuiz.TabIndex = 1;
-            lblNivelQuiz.Text = "Nivel:";
             // 
             // lblValorQuiz
             // 
             lblValorQuiz.AutoSize = true;
             lblValorQuiz.BackColor = Color.Yellow;
-            lblValorQuiz.Location = new Point(12, 416);
+            lblValorQuiz.Location = new Point(12, 440);
             lblValorQuiz.Name = "lblValorQuiz";
             lblValorQuiz.Size = new Size(56, 25);
             lblValorQuiz.TabIndex = 2;
@@ -77,7 +77,7 @@
             btnProximaQuiz.BackColor = Color.Pink;
             btnProximaQuiz.FlatAppearance.BorderColor = Color.Yellow;
             btnProximaQuiz.FlatStyle = FlatStyle.Flat;
-            btnProximaQuiz.Location = new Point(666, 397);
+            btnProximaQuiz.Location = new Point(768, 424);
             btnProximaQuiz.Name = "btnProximaQuiz";
             btnProximaQuiz.Size = new Size(122, 41);
             btnProximaQuiz.TabIndex = 3;
@@ -149,19 +149,26 @@
             lblPerguntaNumeroQuiz.BackColor = Color.LightGoldenrodYellow;
             lblPerguntaNumeroQuiz.Location = new Point(373, 8);
             lblPerguntaNumeroQuiz.Name = "lblPerguntaNumeroQuiz";
-            lblPerguntaNumeroQuiz.Size = new Size(155, 25);
+            lblPerguntaNumeroQuiz.Size = new Size(0, 25);
             lblPerguntaNumeroQuiz.TabIndex = 9;
-            lblPerguntaNumeroQuiz.Text = "Pergunta tal de tal";
             // 
             // lblPontuacaoQuiz
             // 
             lblPontuacaoQuiz.AutoSize = true;
             lblPontuacaoQuiz.BackColor = Color.Aquamarine;
-            lblPontuacaoQuiz.Location = new Point(404, 416);
+            lblPontuacaoQuiz.Location = new Point(429, 440);
             lblPontuacaoQuiz.Name = "lblPontuacaoQuiz";
-            lblPontuacaoQuiz.Size = new Size(99, 25);
+            lblPontuacaoQuiz.Size = new Size(0, 25);
             lblPontuacaoQuiz.TabIndex = 10;
-            lblPontuacaoQuiz.Text = "Pontuação:";
+            // 
+            // lblTemaQuiz
+            // 
+            lblTemaQuiz.AutoSize = true;
+            lblTemaQuiz.BackColor = Color.Turquoise;
+            lblTemaQuiz.Location = new Point(211, 440);
+            lblTemaQuiz.Name = "lblTemaQuiz";
+            lblTemaQuiz.Size = new Size(0, 25);
+            lblTemaQuiz.TabIndex = 11;
             // 
             // FrmQuiz
             // 
@@ -169,6 +176,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSeaGreen;
             ClientSize = new Size(902, 474);
+            Controls.Add(lblTemaQuiz);
             Controls.Add(lblPontuacaoQuiz);
             Controls.Add(lblPerguntaNumeroQuiz);
             Controls.Add(rbResposta4);
@@ -201,5 +209,6 @@
         private RadioButton rbResposta4;
         private Label lblPerguntaNumeroQuiz;
         private Label lblPontuacaoQuiz;
+        private Label lblTemaQuiz;
     }
 }
