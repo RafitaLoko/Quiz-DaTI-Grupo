@@ -57,7 +57,15 @@
             // 
             lblNivelQuiz.AutoSize = true;
             lblNivelQuiz.BackColor = Color.Yellow;
+
+
+            lblNivelQuiz.Location = new Point(679, 9);
+
             lblNivelQuiz.Location = new Point(688, 9);
+
+
+            lblNivelQuiz.Location = new Point(688, 9);
+
             lblNivelQuiz.Name = "lblNivelQuiz";
             lblNivelQuiz.Size = new Size(0, 25);
             lblNivelQuiz.TabIndex = 1;
@@ -76,7 +84,15 @@
             btnProximaQuiz.BackColor = Color.Pink;
             btnProximaQuiz.FlatAppearance.BorderColor = Color.Yellow;
             btnProximaQuiz.FlatStyle = FlatStyle.Flat;
+
+
+            btnProximaQuiz.Location = new Point(768, 424);
+
             btnProximaQuiz.Location = new Point(705, 431);
+
+
+            btnProximaQuiz.Location = new Point(705, 431);
+
             btnProximaQuiz.Name = "btnProximaQuiz";
             btnProximaQuiz.Size = new Size(122, 41);
             btnProximaQuiz.TabIndex = 3;
@@ -154,7 +170,15 @@
             // 
             lblPontuacaoQuiz.AutoSize = true;
             lblPontuacaoQuiz.BackColor = Color.Aquamarine;
+
+
+            lblPontuacaoQuiz.Location = new Point(429, 440);
+
             lblPontuacaoQuiz.Location = new Point(404, 440);
+
+
+            lblPontuacaoQuiz.Location = new Point(404, 440);
+
             lblPontuacaoQuiz.Name = "lblPontuacaoQuiz";
             lblPontuacaoQuiz.Size = new Size(0, 25);
             lblPontuacaoQuiz.TabIndex = 10;
@@ -173,8 +197,17 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSeaGreen;
+
+
+            ClientSize = new Size(902, 474);
+            Controls.Add(lblTemaQuiz);
+
+            ClientSize = new Size(830, 474);
+
+
             ClientSize = new Size(830, 474);
             Controls.Add(lblTemaQuiz);
+
             Controls.Add(lblPontuacaoQuiz);
             Controls.Add(lblPerguntaNumeroQuiz);
             Controls.Add(rbResposta4);

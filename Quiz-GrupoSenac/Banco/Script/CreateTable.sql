@@ -86,6 +86,7 @@ foreign key (ConquistasId)
 references Conquistas(Id)
 );
 
+<<<<<<< HEAD
 
 insert into pergunta 
 (enunciado, tipo, nivel, tema, pontuacao)
@@ -241,3 +242,5 @@ VALUES
 
 
 
+=======
+>>>>>>> cec7577481188bd2d9e787a07d234d9a4ac86a53
