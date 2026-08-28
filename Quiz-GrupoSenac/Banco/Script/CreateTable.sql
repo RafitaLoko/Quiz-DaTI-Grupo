@@ -86,4 +86,3 @@ foreign key (ConquistasId)
 references Conquistas(Id)
 );
 
-

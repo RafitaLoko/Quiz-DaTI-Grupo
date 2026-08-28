@@ -29,6 +29,54 @@ namespace Quiz_GrupoSenac
 
         private void btnProximaQuiz_Click(object sender, EventArgs e)
         {
+            Pergunta pergunta = perguntas[numeroPergunta];
+
+            int respostaEscolhida = -1;
+
+            if (rbResposta1.Checked)
+                respostaEscolhida = 0;
+            else if (rbResposta2.Checked)
+                respostaEscolhida = 1;
+            else if (rbResposta3.Checked)
+                respostaEscolhida = 2;
+            else if (rbResposta4.Checked)
+                respostaEscolhida = 3;
+
+
+            if (respostaEscolhida == -1)
+            {
+                MessageBox.Show("Escolha uma resposta.");
+                return;
+            }
+
+            bool acertou = pergunta.Alternativas[respostaEscolhida].Correta;
+
+            
+            //if (numeroPergunta == 9)
+            //{
+            //    FinalizarQuiz();
+            //    return;
+            //}
+
+            numeroPergunta++;
+
+            Pergunta proxima = perguntas[numeroPergunta];
+            lblPerguntaNumeroQuiz.Text = "Pergunta" + (numeroPergunta + 1) + " de 10";
+
+            lblPerguntaQuiz.Text = proxima.Enunciado;
+            lblTemaQuiz.Text = "Tema: " + proxima.Tema;
+            lblNickQuiz.Text = "Nivel: " + proxima.Nivel;
+            //lblPontuacaoQuiz = "Vale: " + proxima.Pontuacao + " pontos";
+
+            rbResposta1.Text = proxima.Alternativas[0].Texto;
+            rbResposta2.Text = proxima.Alternativas[1].Texto;
+            rbResposta3.Text = proxima.Alternativas[2].Texto;
+            rbResposta4.Text = proxima.Alternativas[3].Texto;
+            
+            if (numeroPergunta == 9)
+            {
+                btnProximaQuiz.Text = "Finalizar";
+            }
 
         }
 
