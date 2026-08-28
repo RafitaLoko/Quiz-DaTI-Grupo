@@ -15,11 +15,20 @@ namespace Quiz_GrupoSenac
 {
     public partial class FrmQuiz : Form
     {
-        List<Pergunta> perguntas;
         int numeroPergunta = 0;
+        int pontuacaoTotal = 0;
+        int sequenciaAcertos = 0;
+        int maiorSequencia = 0;
 
-        PerguntaRepository repository =
-            new PerguntaRepository();
+
+        List<Pergunta> perguntas;
+
+        List<string> resultados = new List<string>(); 
+        
+        
+       
+
+
 
 
         public FrmQuiz()
@@ -38,6 +47,10 @@ namespace Quiz_GrupoSenac
 
 
             perguntas = await PerguntaRepository.BuscarPerguntas();
+
+            
+
+
             Pergunta pergunta = perguntas[numeroPergunta];
 
             lblPerguntaNumeroQuiz.Text = "Pergunta 1 de 10";
@@ -52,6 +65,13 @@ namespace Quiz_GrupoSenac
             rbResposta3.Text = pergunta.Alternativas[2].Texto;
             rbResposta4.Text = pergunta.Alternativas[3].Texto;
 
+            btnProximaQuiz.Text = "Próxima";
+
+            if (perguntas.Count < 10)
+            {
+                MessageBox.Show("Não existem 10 perguntas cadastradas.");
+                return;
+            }
 
         }
 

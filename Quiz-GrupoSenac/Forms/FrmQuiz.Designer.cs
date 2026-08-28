@@ -80,7 +80,6 @@
             btnProximaQuiz.Name = "btnProximaQuiz";
             btnProximaQuiz.Size = new Size(122, 41);
             btnProximaQuiz.TabIndex = 3;
-            btnProximaQuiz.Text = "Proxima";
             btnProximaQuiz.UseVisualStyleBackColor = false;
             btnProximaQuiz.Click += btnProximaQuiz_Click;
             // 
