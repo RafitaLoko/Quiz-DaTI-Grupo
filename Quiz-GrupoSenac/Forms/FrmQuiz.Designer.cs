@@ -57,15 +57,7 @@
             // 
             lblNivelQuiz.AutoSize = true;
             lblNivelQuiz.BackColor = Color.Yellow;
-
-
-            lblNivelQuiz.Location = new Point(679, 9);
-
             lblNivelQuiz.Location = new Point(688, 9);
-
-
-            lblNivelQuiz.Location = new Point(688, 9);
-
             lblNivelQuiz.Name = "lblNivelQuiz";
             lblNivelQuiz.Size = new Size(0, 25);
             lblNivelQuiz.TabIndex = 1;
@@ -84,15 +76,7 @@
             btnProximaQuiz.BackColor = Color.Pink;
             btnProximaQuiz.FlatAppearance.BorderColor = Color.Yellow;
             btnProximaQuiz.FlatStyle = FlatStyle.Flat;
-
-
-            btnProximaQuiz.Location = new Point(768, 424);
-
             btnProximaQuiz.Location = new Point(705, 431);
-
-
-            btnProximaQuiz.Location = new Point(705, 431);
-
             btnProximaQuiz.Name = "btnProximaQuiz";
             btnProximaQuiz.Size = new Size(122, 41);
             btnProximaQuiz.TabIndex = 3;
@@ -111,11 +95,10 @@
             // 
             // rbResposta1
             // 
-            rbResposta1.AutoSize = true;
             rbResposta1.BackColor = Color.MintCream;
             rbResposta1.Location = new Point(41, 218);
             rbResposta1.Name = "rbResposta1";
-            rbResposta1.Size = new Size(124, 29);
+            rbResposta1.Size = new Size(363, 98);
             rbResposta1.TabIndex = 5;
             rbResposta1.TabStop = true;
             rbResposta1.Text = "Resposta 1";
@@ -123,11 +106,10 @@
             // 
             // rbResposta2
             // 
-            rbResposta2.AutoSize = true;
             rbResposta2.BackColor = Color.MintCream;
             rbResposta2.Location = new Point(41, 322);
             rbResposta2.Name = "rbResposta2";
-            rbResposta2.Size = new Size(120, 29);
+            rbResposta2.Size = new Size(363, 103);
             rbResposta2.TabIndex = 6;
             rbResposta2.TabStop = true;
             rbResposta2.Text = "resposta 2";
@@ -135,11 +117,10 @@
             // 
             // rbResposta3
             // 
-            rbResposta3.AutoSize = true;
             rbResposta3.BackColor = Color.MintCream;
-            rbResposta3.Location = new Point(404, 218);
+            rbResposta3.Location = new Point(429, 218);
             rbResposta3.Name = "rbResposta3";
-            rbResposta3.Size = new Size(120, 29);
+            rbResposta3.Size = new Size(375, 98);
             rbResposta3.TabIndex = 7;
             rbResposta3.TabStop = true;
             rbResposta3.Text = "resposta 3";
@@ -147,11 +128,10 @@
             // 
             // rbResposta4
             // 
-            rbResposta4.AutoSize = true;
             rbResposta4.BackColor = Color.MintCream;
-            rbResposta4.Location = new Point(404, 322);
+            rbResposta4.Location = new Point(425, 322);
             rbResposta4.Name = "rbResposta4";
-            rbResposta4.Size = new Size(124, 29);
+            rbResposta4.Size = new Size(379, 103);
             rbResposta4.TabIndex = 8;
             rbResposta4.TabStop = true;
             rbResposta4.Text = "Resposta 4";
@@ -170,15 +150,7 @@
             // 
             lblPontuacaoQuiz.AutoSize = true;
             lblPontuacaoQuiz.BackColor = Color.Aquamarine;
-
-
-            lblPontuacaoQuiz.Location = new Point(429, 440);
-
             lblPontuacaoQuiz.Location = new Point(404, 440);
-
-
-            lblPontuacaoQuiz.Location = new Point(404, 440);
-
             lblPontuacaoQuiz.Name = "lblPontuacaoQuiz";
             lblPontuacaoQuiz.Size = new Size(0, 25);
             lblPontuacaoQuiz.TabIndex = 10;
@@ -197,17 +169,8 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSeaGreen;
-
-
-            ClientSize = new Size(902, 474);
-            Controls.Add(lblTemaQuiz);
-
-            ClientSize = new Size(830, 474);
-
-
             ClientSize = new Size(830, 474);
             Controls.Add(lblTemaQuiz);
-
             Controls.Add(lblPontuacaoQuiz);
             Controls.Add(lblPerguntaNumeroQuiz);
             Controls.Add(rbResposta4);

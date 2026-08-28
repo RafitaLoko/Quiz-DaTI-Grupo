@@ -34,23 +34,25 @@
             btnEntrar = new Button();
             lblCadastroTelaLogin = new Label();
             btnCadastreTelaLogin = new Button();
+            lblnickname = new Label();
+            lblSenha = new Label();
             SuspendLayout();
             // 
             // txtNick
             // 
             txtNick.Location = new Point(283, 74);
             txtNick.Name = "txtNick";
-            txtNick.PlaceholderText = "Nick";
+            txtNick.PlaceholderText = "Insira seu Nick aqui:";
             txtNick.Size = new Size(248, 31);
             txtNick.TabIndex = 0;
             txtNick.TextChanged += txtNick_TextChanged;
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(326, 157);
+            txtSenha.Location = new Point(283, 157);
             txtSenha.Name = "txtSenha";
-            txtSenha.PlaceholderText = "Senha";
-            txtSenha.Size = new Size(150, 31);
+            txtSenha.PlaceholderText = "Insira sua Senha aqui:";
+            txtSenha.Size = new Size(248, 31);
             txtSenha.TabIndex = 1;
             txtSenha.UseSystemPasswordChar = true;
             txtSenha.TextChanged += txtSenha_TextChanged;
@@ -90,12 +92,32 @@
             btnCadastreTelaLogin.UseVisualStyleBackColor = false;
             btnCadastreTelaLogin.Click += btnCadastreTelaLogin_Click;
             // 
+            // lblnickname
+            // 
+            lblnickname.AutoSize = true;
+            lblnickname.Location = new Point(173, 74);
+            lblnickname.Name = "lblnickname";
+            lblnickname.Size = new Size(94, 25);
+            lblnickname.TabIndex = 5;
+            lblnickname.Text = "Nickname:";
+            // 
+            // lblSenha
+            // 
+            lblSenha.AutoSize = true;
+            lblSenha.Location = new Point(195, 157);
+            lblSenha.Name = "lblSenha";
+            lblSenha.Size = new Size(64, 25);
+            lblSenha.TabIndex = 6;
+            lblSenha.Text = "Senha:";
+            // 
             // FrmTelaLogin
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Info;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblSenha);
+            Controls.Add(lblnickname);
             Controls.Add(btnCadastreTelaLogin);
             Controls.Add(lblCadastroTelaLogin);
             Controls.Add(btnEntrar);
@@ -116,5 +138,7 @@
         private Button btnEntrar;
         private Label lblCadastroTelaLogin;
         private Button btnCadastreTelaLogin;
+        private Label lblnickname;
+        private Label lblSenha;
     }
 }
