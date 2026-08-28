@@ -87,3 +87,63 @@ references Conquistas(Id)
 );
 
 
+insert into pergunta 
+(enunciado, tipo, nivel, tema, pontuacao)
+values (
+'Qual componente é responsável pelo processamento do computador?',
+'Alternativas',
+'Fácil',
+'Hardware',
+20
+);
+
+insert into alternativa 
+(perguntaid, texto, correta)
+values 
+(1, 'Monitor', false),
+(1, 'Teclado', false),
+(1, 'Processador', true),
+(1, 'Mouse', false);
+
+select * from pergunta p 
+
+
+
+              SELECT 
+                p.Id,
+                p.Enunciado,
+                p.Tipo,
+                p.Nivel,
+                p.Tema,
+                p.Pontuacao,
+
+                a.Id,
+                a.PerguntaId,
+                a.Texto,
+                a.Correta
+
+              FROM Pergunta p
+
+              INNER JOIN Alternativa a
+                ON a.PerguntaId = p.Id
+
+               WHERE p.Id IN
+              (
+                SELECT Id
+                FROM Pergunta
+                WHERE Nivel = 'Avançado'
+                ORDER BY RANDOM()
+                LIMIT 1
+              )
+
+              OR p.Id IN
+              (
+                SELECT Id
+                FROM Pergunta
+                WHERE Nivel <> 'Avançado'
+                ORDER BY RANDOM()
+                LIMIT 9
+              )
+
+              ORDER BY p.Id;
+

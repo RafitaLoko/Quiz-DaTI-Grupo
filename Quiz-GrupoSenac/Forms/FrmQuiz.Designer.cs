@@ -57,11 +57,7 @@
             // 
             lblNivelQuiz.AutoSize = true;
             lblNivelQuiz.BackColor = Color.Yellow;
-<<<<<<< HEAD
-            lblNivelQuiz.Location = new Point(679, 9);
-=======
             lblNivelQuiz.Location = new Point(688, 9);
->>>>>>> e722ea5156227ab701856dafc762f31b5b48b8c6
             lblNivelQuiz.Name = "lblNivelQuiz";
             lblNivelQuiz.Size = new Size(0, 25);
             lblNivelQuiz.TabIndex = 1;
@@ -72,20 +68,15 @@
             lblValorQuiz.BackColor = Color.Yellow;
             lblValorQuiz.Location = new Point(12, 440);
             lblValorQuiz.Name = "lblValorQuiz";
-            lblValorQuiz.Size = new Size(56, 25);
+            lblValorQuiz.Size = new Size(0, 25);
             lblValorQuiz.TabIndex = 2;
-            lblValorQuiz.Text = "Valor:";
             // 
             // btnProximaQuiz
             // 
             btnProximaQuiz.BackColor = Color.Pink;
             btnProximaQuiz.FlatAppearance.BorderColor = Color.Yellow;
             btnProximaQuiz.FlatStyle = FlatStyle.Flat;
-<<<<<<< HEAD
-            btnProximaQuiz.Location = new Point(768, 424);
-=======
             btnProximaQuiz.Location = new Point(705, 431);
->>>>>>> e722ea5156227ab701856dafc762f31b5b48b8c6
             btnProximaQuiz.Name = "btnProximaQuiz";
             btnProximaQuiz.Size = new Size(122, 41);
             btnProximaQuiz.TabIndex = 3;
@@ -164,11 +155,7 @@
             // 
             lblPontuacaoQuiz.AutoSize = true;
             lblPontuacaoQuiz.BackColor = Color.Aquamarine;
-<<<<<<< HEAD
-            lblPontuacaoQuiz.Location = new Point(429, 440);
-=======
             lblPontuacaoQuiz.Location = new Point(404, 440);
->>>>>>> e722ea5156227ab701856dafc762f31b5b48b8c6
             lblPontuacaoQuiz.Name = "lblPontuacaoQuiz";
             lblPontuacaoQuiz.Size = new Size(0, 25);
             lblPontuacaoQuiz.TabIndex = 10;
@@ -187,12 +174,8 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSeaGreen;
-<<<<<<< HEAD
-            ClientSize = new Size(902, 474);
-            Controls.Add(lblTemaQuiz);
-=======
             ClientSize = new Size(830, 474);
->>>>>>> e722ea5156227ab701856dafc762f31b5b48b8c6
+            Controls.Add(lblTemaQuiz);
             Controls.Add(lblPontuacaoQuiz);
             Controls.Add(lblPerguntaNumeroQuiz);
             Controls.Add(rbResposta4);
