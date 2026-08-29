@@ -38,5 +38,8 @@
     <Compile Update="Forms\FrmTelaMenuAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\FrmTelaResultadoQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Quiz_GrupoSenac.Repositories;
+using Quiz_GrupoSenac.Forms;
 
 
 namespace Quiz_GrupoSenac
@@ -70,11 +71,11 @@ namespace Quiz_GrupoSenac
             numeroPergunta++;
 
             Pergunta proxima = perguntas[numeroPergunta];
-            lblPerguntaNumeroQuiz.Text = "Pergunta " + (numeroPergunta + 1) + " de 10";
+            lblPerguntaNumeroQuiz.Text = "Pergunta" + (numeroPergunta + 1) + " de 10";
 
             lblPerguntaQuiz.Text = proxima.Enunciado;
             lblTemaQuiz.Text = "Tema: " + proxima.Tema;
-            lblNivelQuiz.Text = "Nivel: " + proxima.Nivel;
+            lblNickQuiz.Text = "Nivel: " + proxima.Nivel;
             //lblPontuacaoQuiz = "Vale: " + proxima.Pontuacao + " pontos";
 
             rbResposta1.Text = proxima.Alternativas[0].Texto;
@@ -124,17 +125,13 @@ namespace Quiz_GrupoSenac
             if (numeroPergunta == 9)
             {
                 FrmTelaResultadoQuiz telaResultado = new FrmTelaResultadoQuiz(
-                    pontuacaoTotal,
-                    maiorSequencia,
-                    resultados
-                    );
-                telaResultado.Show();
-                
-                this.Hide();
+                    pontuacaoTotal, maiorSequencia, resultados);
 
+
+                telaResultado.Show();
+                this.Hide();
                 return;
             }
-
 
         }
 
