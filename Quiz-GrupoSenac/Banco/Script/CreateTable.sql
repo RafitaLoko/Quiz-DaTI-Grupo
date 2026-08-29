@@ -86,7 +86,7 @@ foreign key (ConquistasId)
 references Conquistas(Id)
 );
 
-<<<<<<< HEAD
+
 
 insert into pergunta 
 (enunciado, tipo, nivel, tema, pontuacao)
@@ -110,43 +110,6 @@ select * from pergunta p
 
 
 
-              SELECT 
-                p.Id,
-                p.Enunciado,
-                p.Tipo,
-                p.Nivel,
-                p.Tema,
-                p.Pontuacao,
-
-                a.Id,
-                a.PerguntaId,
-                a.Texto,
-                a.Correta
-
-              FROM Pergunta p
-
-              INNER JOIN Alternativa a
-                ON a.PerguntaId = p.Id
-
-               WHERE p.Id IN
-              (
-                SELECT Id
-                FROM Pergunta
-                WHERE Nivel = 'Avançado'
-                ORDER BY RANDOM()
-                LIMIT 1
-              )
-
-              OR p.Id IN
-              (
-                SELECT Id
-                FROM Pergunta
-                WHERE Nivel <> 'Avançado'
-                ORDER BY RANDOM()
-                LIMIT 9
-              )
-
-              ORDER BY p.Id;
 
 
 
@@ -242,5 +205,4 @@ VALUES
 
 
 
-=======
->>>>>>> cec7577481188bd2d9e787a07d234d9a4ac86a53
+
