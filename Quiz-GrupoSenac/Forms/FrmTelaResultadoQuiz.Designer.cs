@@ -50,7 +50,8 @@
             // lblPontuacao
             // 
             lblPontuacao.AutoSize = true;
-            lblPontuacao.Location = new Point(12, 58);
+            lblPontuacao.BackColor = Color.Yellow;
+            lblPontuacao.Location = new Point(12, 61);
             lblPontuacao.Name = "lblPontuacao";
             lblPontuacao.Size = new Size(101, 25);
             lblPontuacao.TabIndex = 1;
@@ -59,6 +60,7 @@
             // lblAcertos
             // 
             lblAcertos.AutoSize = true;
+            lblAcertos.BackColor = Color.Lime;
             lblAcertos.Location = new Point(12, 112);
             lblAcertos.Name = "lblAcertos";
             lblAcertos.Size = new Size(76, 25);
@@ -68,6 +70,7 @@
             // lblErros
             // 
             lblErros.AutoSize = true;
+            lblErros.BackColor = Color.Red;
             lblErros.Location = new Point(12, 137);
             lblErros.Name = "lblErros";
             lblErros.Size = new Size(56, 25);
@@ -77,6 +80,7 @@
             // lblSequencia
             // 
             lblSequencia.AutoSize = true;
+            lblSequencia.BackColor = Color.Gold;
             lblSequencia.Location = new Point(12, 162);
             lblSequencia.Name = "lblSequencia";
             lblSequencia.Size = new Size(147, 25);
@@ -85,6 +89,7 @@
             // 
             // lstResultados
             // 
+            lstResultados.BackColor = Color.IndianRed;
             lstResultados.FormattingEnabled = true;
             lstResultados.ItemHeight = 25;
             lstResultados.Location = new Point(12, 204);
@@ -94,12 +99,16 @@
             // 
             // btnVoltarMenu
             // 
+            btnVoltarMenu.BackColor = Color.Red;
+            btnVoltarMenu.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 255);
+            btnVoltarMenu.FlatStyle = FlatStyle.Flat;
             btnVoltarMenu.Location = new Point(12, 404);
             btnVoltarMenu.Name = "btnVoltarMenu";
             btnVoltarMenu.Size = new Size(178, 34);
             btnVoltarMenu.TabIndex = 6;
             btnVoltarMenu.Text = "Voltar ao Menu";
-            btnVoltarMenu.UseVisualStyleBackColor = true;
+            btnVoltarMenu.UseVisualStyleBackColor = false;
+            btnVoltarMenu.Click += btnVoltarMenu_Click;
             // 
             // FrmTelaResultadoQuiz
             // 

@@ -16,5 +16,12 @@ namespace Quiz_GrupoSenac.Forms
         {
             InitializeComponent();
         }
+
+        private void btnVoltarMenu_Click(object sender, EventArgs e)
+        {
+            FrmMenuPrincipal menu = new FrmMenuPrincipal();
+            menu.Show();
+            this.Close();
+        }
     }
 }
