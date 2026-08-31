@@ -8,7 +8,7 @@ namespace Quiz_GrupoSenac.Modelos
 {
     public class Resultado
     {
-        public string Enunciado { get; set; }
+        public string EnunciadoResultado { get; set; }
 
 
         public bool Acertou {  get; set; }

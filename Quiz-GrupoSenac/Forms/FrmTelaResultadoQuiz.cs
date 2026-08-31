@@ -26,7 +26,7 @@ namespace Quiz_GrupoSenac.Forms
             {
 
                 string status = r.Acertou ? "✔️ Acertou" : "❌ Errou";
-                lstResultados.Items.Add($"{r.Enunciado} - {status} ({r.PontosGanhos} pontos)");
+                lstResultados.Items.Add($"{r.EnunciadoResultado} - {status} ({r.PontosGanhos} pontos)");
             }
         }
 

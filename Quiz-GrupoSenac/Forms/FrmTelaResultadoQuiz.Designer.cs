@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            lblResultadosDoQuiz = new Label();
             lblPontuacao = new Label();
             lblAcertos = new Label();
             lblErros = new Label();
@@ -37,15 +37,15 @@
             btnVoltarMenu = new Button();
             SuspendLayout();
             // 
-            // label1
+            // lblResultadosDoQuiz
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(1, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(215, 32);
-            label1.TabIndex = 0;
-            label1.Text = "Resultados do quiz";
+            lblResultadosDoQuiz.AutoSize = true;
+            lblResultadosDoQuiz.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblResultadosDoQuiz.Location = new Point(1, 9);
+            lblResultadosDoQuiz.Name = "lblResultadosDoQuiz";
+            lblResultadosDoQuiz.Size = new Size(215, 32);
+            lblResultadosDoQuiz.TabIndex = 0;
+            lblResultadosDoQuiz.Text = "Resultados do quiz";
             // 
             // lblPontuacao
             // 
@@ -122,7 +122,7 @@
             Controls.Add(lblErros);
             Controls.Add(lblAcertos);
             Controls.Add(lblPontuacao);
-            Controls.Add(label1);
+            Controls.Add(lblResultadosDoQuiz);
             Name = "FrmTelaResultadoQuiz";
             Text = "FrmTelaResultadoQuiz";
             Load += FrmTelaResultadoQuiz_Load;
@@ -132,7 +132,7 @@
 
         #endregion
 
-        private Label label1;
+        private Label lblResultadosDoQuiz;
         private Label lblPontuacao;
         private Label lblAcertos;
         private Label lblErros;
