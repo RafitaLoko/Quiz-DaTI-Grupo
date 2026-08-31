@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Quiz_GrupoSenac.Repositories;
+using Quiz_GrupoSenac.Forms;
 
 
 namespace Quiz_GrupoSenac
@@ -23,10 +24,10 @@ namespace Quiz_GrupoSenac
 
         List<Pergunta> perguntas;
 
-        List<string> resultados = new List<string>(); 
-        
-        
-       
+        List<string> resultados = new List<string>();
+
+
+
 
 
 
@@ -60,16 +61,28 @@ namespace Quiz_GrupoSenac
 
             bool acertou = pergunta.Alternativas[respostaEscolhida].Correta;
 
-            
-            //if (numeroPergunta == 9)
-            //{
-            //    FinalizarQuiz();
-            //    return;
-            //}
+
+            if (numeroPergunta == 9)
+            {
+                
+                return;
+            }
 
             numeroPergunta++;
 
             Pergunta proxima = perguntas[numeroPergunta];
+
+            if (pergunta.Tipo == "Verdadeiro ou Falso")
+            {
+                FrmQuizVF telaVF = new FrmQuizVF();
+                telaVF.Show();
+                this.Hide();
+
+                return;
+            }
+
+
+
             lblPerguntaNumeroQuiz.Text = "Pergunta " + (numeroPergunta + 1) + " de 10";
 
             lblPerguntaQuiz.Text = proxima.Enunciado;
@@ -81,7 +94,7 @@ namespace Quiz_GrupoSenac
             rbResposta2.Text = proxima.Alternativas[1].Texto;
             rbResposta3.Text = proxima.Alternativas[2].Texto;
             rbResposta4.Text = proxima.Alternativas[3].Texto;
-            
+
             if (numeroPergunta == 9)
             {
                 btnProximaQuiz.Text = "Finalizar";
@@ -96,10 +109,13 @@ namespace Quiz_GrupoSenac
 
             perguntas = await PerguntaRepository.BuscarPerguntas();
 
-            
+
 
 
             Pergunta pergunta = perguntas[numeroPergunta];
+
+
+            
 
             lblPerguntaNumeroQuiz.Text = "Pergunta 1 de 10";
             lblPerguntaQuiz.Text = pergunta.Enunciado;
@@ -121,26 +137,13 @@ namespace Quiz_GrupoSenac
                 return;
             }
 
-            if (numeroPergunta == 9)
-            {
-                FrmTelaResultadoQuiz telaResultado = new FrmTelaResultadoQuiz(
-                    pontuacaoTotal,
-                    maiorSequencia,
-                    resultados
-                    );
-                telaResultado.Show();
-                
-                this.Hide();
-
-                return;
-            }
-
 
         }
 
-        private void lblNickQuiz_Click(object sender, EventArgs e)
-        {
-         
-        }
     }
 }
+
+
+        
+
+      

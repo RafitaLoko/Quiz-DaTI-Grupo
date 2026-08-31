@@ -26,9 +26,12 @@ namespace Quiz_GrupoSenac.Forms
             InitializeComponent();
         }
 
-        private void FrmQuizVF_Load(object sender, EventArgs e)
+        private async void FrmQuizVF_Load(object sender, EventArgs e)
         {
-            
+
+
+            perguntas = await PerguntaRepository.BuscarPerguntas();
+
 
             Pergunta pergunta = perguntas[numeroPergunta];
 

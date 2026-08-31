@@ -51,7 +51,7 @@
             lblNickQuiz.Name = "lblNickQuiz";
             lblNickQuiz.Size = new Size(0, 25);
             lblNickQuiz.TabIndex = 0;
-            lblNickQuiz.Click += lblNickQuiz_Click;
+
             // 
             // lblNivelQuiz
             // 
