@@ -24,7 +24,7 @@ namespace Quiz_GrupoSenac
 
         List<Pergunta> perguntas;
 
-        List<string> resultados = new List<string>(); 
+        List<Resultado> resultados = new List<Resultado>(); 
         
         
        
@@ -124,12 +124,12 @@ namespace Quiz_GrupoSenac
 
             if (numeroPergunta == 9)
             {
-                //FrmTelaResultadoQuiz telaResultado = new FrmTelaResultadoQuiz(pontuacaoTotal, maiorSequencia, resultados);
+                FrmTelaResultadoQuiz telaResultado = new FrmTelaResultadoQuiz(pontuacaoTotal, maiorSequencia, resultados);
 
 
-                //telaResultado.Show();
-                //this.Hide();
-                //return;
+                telaResultado.Show();
+                this.Hide();
+                return;
             }
 
         }
