@@ -59,5 +59,15 @@ namespace Quiz_GrupoSenac.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1477780233_1024x1024 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1477780233-1024x1024", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
