@@ -76,7 +76,7 @@ namespace Quiz_GrupoSenac
             lblPerguntaQuiz.Text = proxima.Enunciado;
             lblTemaQuiz.Text = "Tema: " + proxima.Tema;
             lblNickQuiz.Text = "Nivel: " + proxima.Nivel;
-            //lblPontuacaoQuiz = "Vale: " + proxima.Pontuacao + " pontos";
+            lblPontuacaoQuiz.Text = "Vale: " + proxima.Pontuacao + " pontos";
 
             rbResposta1.Text = proxima.Alternativas[0].Texto;
             rbResposta2.Text = proxima.Alternativas[1].Texto;
@@ -124,13 +124,12 @@ namespace Quiz_GrupoSenac
 
             if (numeroPergunta == 9)
             {
-                FrmTelaResultadoQuiz telaResultado = new FrmTelaResultadoQuiz(
-                    pontuacaoTotal, maiorSequencia, resultados);
+                //FrmTelaResultadoQuiz telaResultado = new FrmTelaResultadoQuiz(pontuacaoTotal, maiorSequencia, resultados);
 
 
-                telaResultado.Show();
-                this.Hide();
-                return;
+                //telaResultado.Show();
+                //this.Hide();
+                //return;
             }
 
         }

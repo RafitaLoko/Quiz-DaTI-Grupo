@@ -125,6 +125,7 @@
             Controls.Add(label1);
             Name = "FrmTelaResultadoQuiz";
             Text = "FrmTelaResultadoQuiz";
+            Load += FrmTelaResultadoQuiz_Load;
             ResumeLayout(false);
             PerformLayout();
         }
