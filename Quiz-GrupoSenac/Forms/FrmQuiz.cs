@@ -106,7 +106,7 @@ namespace Quiz_GrupoSenac
 
             lblPerguntaQuiz.Text = proxima.Enunciado;
             lblTemaQuiz.Text = "Tema: " + proxima.Tema;
-            lblNickQuiz.Text = "Nivel: " + proxima.Nivel;
+            lblNivelQuiz.Text = "Nivel: " + proxima.Nivel;
             lblPontuacaoQuiz.Text = "Vale: " + proxima.Pontuacao + " pontos";
 
             rbResposta1.Text = proxima.Alternativas[0].Texto;
