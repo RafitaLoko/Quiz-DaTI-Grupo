@@ -24,17 +24,16 @@ namespace Quiz_GrupoSenac
 
         List<Pergunta> perguntas;
 
-<<<<<<< HEAD
-        List<string> resultados = new List<string>();
 
 
 
-=======
+
+
         List<Resultado> resultados = new List<Resultado>(); 
         
         
        
->>>>>>> 152d750a0186a38d75f968b0ada6fd53ba57aea1
+
 
 
 
@@ -78,7 +77,7 @@ namespace Quiz_GrupoSenac
             numeroPergunta++;
 
             Pergunta proxima = perguntas[numeroPergunta];
-<<<<<<< HEAD
+
 
             if (pergunta.Tipo == "Verdadeiro ou Falso")
             {
@@ -92,9 +91,9 @@ namespace Quiz_GrupoSenac
 
 
             lblPerguntaNumeroQuiz.Text = "Pergunta " + (numeroPergunta + 1) + " de 10";
-=======
+
             lblPerguntaNumeroQuiz.Text = "Pergunta" + (numeroPergunta + 1) + " de 10";
->>>>>>> 152d750a0186a38d75f968b0ada6fd53ba57aea1
+
 
             lblPerguntaQuiz.Text = proxima.Enunciado;
             lblTemaQuiz.Text = "Tema: " + proxima.Tema;
@@ -148,8 +147,7 @@ namespace Quiz_GrupoSenac
                 return;
             }
 
-<<<<<<< HEAD
-=======
+
             if (numeroPergunta == 9)
             {
                 FrmTelaResultadoQuiz telaResultado = new FrmTelaResultadoQuiz(pontuacaoTotal, maiorSequencia, resultados);
@@ -159,7 +157,7 @@ namespace Quiz_GrupoSenac
                 this.Hide();
                 return;
             }
->>>>>>> 152d750a0186a38d75f968b0ada6fd53ba57aea1
+
 
         }
 
