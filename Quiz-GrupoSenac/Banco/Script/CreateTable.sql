@@ -110,98 +110,112 @@ select * from pergunta p
 
 
 
-
-
-
-              INSERT INTO Pergunta (Enunciado, Tipo, Nivel, Tema, Pontuacao)
+INSERT INTO Pergunta
+(Enunciado, Tipo, Nivel, Tema, Pontuacao)
 VALUES
-('Qual destes dispositivos é utilizado para armazenar dados permanentemente?', 'Alternativas', 'Iniciante', 'Hardware', 10),
 
-('Qual linguagem é muito utilizada para desenvolver aplicações web?', 'Alternativas', 'Fácil', 'Programação', 20),
+('Qual componente é responsável por executar instruções e realizar cálculos em um computador?',
+'Alternativas', 'Fácil', 'Hardware', 20),
 
-('Qual equipamento é responsável por encaminhar dados entre diferentes redes?', 'Alternativas', 'Intermediário', 'Redes', 30),
+('Qual estrutura de programação é mais adequada quando queremos executar diferentes comandos dependendo de uma condição?',
+'Alternativas', 'Intermediário', 'Programação', 30),
 
-('Qual atitude ajuda a proteger uma conta contra acessos não autorizados?', 'Alternativas', 'Fácil', 'Segurança Digital', 20),
+('O protocolo TCP garante a entrega dos dados de forma confiável e ordenada.',
+'Verdadeiro ou Falso', 'Intermediário', 'Redes', 30),
 
-('Qual destes é um sistema operacional?', 'Alternativas', 'Iniciante', 'Sistemas Operacionais', 10),
+('Qual prática oferece maior proteção contra ataques de força bruta em uma conta?',
+'Alternativas', 'Avançado', 'Segurança Digital', 50),
 
-('Qual ferramenta é utilizada principalmente para criar apresentações?', 'Alternativas', 'Iniciante', 'Ferramentas de produtividade', 10),
+('Qual sistema de arquivos é utilizado por padrão em muitas instalações modernas do Windows?',
+'Alternativas', 'Fácil', 'Sistemas Operacionais', 20),
 
-('O que significa HTTPS em um endereço de site?', 'Alternativas', 'Intermediário', 'Segurança Digital', 30),
+('Uma variável declarada dentro de um método pode ser acessada diretamente por qualquer outro método da mesma classe.',
+'Verdadeiro ou Falso', 'Intermediário', 'Programação', 30),
 
-('Qual estrutura de programação é utilizada para repetir um bloco de código?', 'Alternativas', 'Intermediário', 'Programação', 30),
+('Qual dispositivo normalmente encaminha pacotes entre redes diferentes?',
+'Alternativas', 'Intermediário', 'Redes', 30),
 
-('Qual tecnologia permite conectar dispositivos a uma rede sem utilizar cabos?', 'Alternativas', 'Avançado', 'Redes', 50);
+('Qual característica da memória RAM a diferencia de um SSD?',
+'Alternativas', 'Avançado', 'Hardware', 50),
 
+('Qual ferramenta é mais adequada para organizar dados em linhas e colunas e realizar cálculos?',
+'Alternativas', 'Fácil', 'Ferramentas de produtividade', 20),
+
+('Qual técnica é utilizada para transformar dados legíveis em uma informação codificada que só pode ser recuperada utilizando um mecanismo adequado?',
+'Alternativas', 'Avançado', 'Segurança Digital', 50);
 
 
 INSERT INTO Alternativa (PerguntaId, Texto, Correta)
 VALUES
-(2, 'HD/SSD', TRUE),
-(2, 'Monitor', FALSE),
-(2, 'Teclado', FALSE),
-(2, 'Mouse', FALSE);
+(1, 'Processador (CPU)', TRUE),
+(1, 'Placa de vídeo', FALSE),
+(1, 'Fonte de alimentação', FALSE),
+(1, 'Monitor', FALSE);
 
 INSERT INTO Alternativa (PerguntaId, Texto, Correta)
 VALUES
-(3, 'HTML', FALSE),
-(3, 'CSS', FALSE),
-(3, 'JavaScript', TRUE),
-(3, 'SQL', FALSE);
-
-
-INSERT INTO Alternativa (PerguntaId, Texto, Correta)
-VALUES
-(4, 'Roteador', TRUE),
-(4, 'Teclado', FALSE),
-(4, 'Monitor', FALSE),
-(4, 'Impressora', FALSE);
-
+(2, 'if/else', TRUE),
+(2, 'import', FALSE),
+(2, 'class', FALSE),
+(2, 'return', FALSE);
 
 INSERT INTO Alternativa (PerguntaId, Texto, Correta)
 VALUES
-(5, 'Usar a mesma senha em todos os sites', FALSE),
-(5, 'Compartilhar a senha com amigos', FALSE),
-(5, 'Usar uma senha forte e diferente', TRUE),
-(5, 'Deixar a senha anotada publicamente', FALSE);
+(4, 'Usar uma senha curta', FALSE),
+(4, 'Usar uma senha longa e autenticação multifator', TRUE),
+(4, 'Usar a mesma senha em vários sites', FALSE),
+(4, 'Desativar atualizações de segurança', FALSE);
 
 
 INSERT INTO Alternativa (PerguntaId, Texto, Correta)
 VALUES
-(6, 'Windows', TRUE),
-(6, 'Google Chrome', FALSE),
-(6, 'WhatsApp', FALSE),
-(6, 'YouTube', FALSE);
-
-
-INSERT INTO Alternativa (PerguntaId, Texto, Correta)
-VALUES
-(7, 'PowerPoint', TRUE),
-(7, 'Calculadora', FALSE),
-(7, 'Bloco de Notas', FALSE),
-(7, 'Gerenciador de Arquivos', FALSE);
-
+(5, 'NTFS', TRUE),
+(5, 'FAT12', FALSE),
+(5, 'EXT2', FALSE),
+(5, 'HFS+', FALSE);
 
 INSERT INTO Alternativa (PerguntaId, Texto, Correta)
 VALUES
-(8, 'Uma conexão sem criptografia', FALSE),
-(8, 'Um protocolo que utiliza criptografia para proteger a comunicação', TRUE),
-(8, 'Um tipo de antivírus', FALSE),
-(8, 'Um sistema operacional', FALSE);
+(7, 'Roteador', TRUE),
+(7, 'Teclado', FALSE),
+(7, 'Monitor', FALSE),
+(7, 'Scanner', FALSE);
 
 INSERT INTO Alternativa (PerguntaId, Texto, Correta)
 VALUES
-(9, 'if', FALSE),
-(9, 'for', TRUE),
-(9, 'class', FALSE),
-(9, 'return', FALSE);
+(8, 'A RAM é uma memória volátil', TRUE),
+(8, 'A RAM mantém os dados mesmo sem energia', FALSE),
+(8, 'A RAM é usada exclusivamente para armazenamento permanente', FALSE),
+(8, 'A RAM não pode ser acessada pelo processador', FALSE);
 
 INSERT INTO Alternativa (PerguntaId, Texto, Correta)
 VALUES
-(10, 'Bluetooth', FALSE),
-(10, 'Wi-Fi', TRUE),
-(10, 'HDMI', FALSE),
-(10, 'USB', FALSE);
+(9, 'Planilha eletrônica', TRUE),
+(9, 'Editor de imagens', FALSE),
+(9, 'Player de música', FALSE),
+(9, 'Navegador GPS', FALSE);
+
+INSERT INTO Alternativa (PerguntaId, Texto, Correta)
+VALUES
+(10, 'Criptografia', TRUE),
+(10, 'Desfragmentação', FALSE),
+(10, 'Formatação', FALSE),
+(10, 'Compactação física do disco', FALSE);
+
+
+
+alter table pergunta 
+add column RespostaVF boolean;
+
+
+update pergunta 
+set RespostaVF = true 
+where id = 3;
+
+update pergunta 
+set RespostaVF = false 
+where id = 6;
+
 
 
 
