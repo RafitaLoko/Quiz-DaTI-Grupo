@@ -78,9 +78,11 @@ namespace Quiz_GrupoSenac
 
             if (numeroPergunta == 9)
             {
-                FrmTelaResultadoQuiz resultado = new FrmTelaResultadoQuiz(pontuacaoTotal, maiorSequencia, resultados);
-                resultado.Show();
                 this.Hide();
+                FrmTelaResultadoQuiz resultado = new FrmTelaResultadoQuiz(pontuacaoTotal, maiorSequencia, resultados);
+                resultado.ShowDialog();
+              
+                return;
             }
 
         numeroPergunta++;
@@ -157,15 +159,17 @@ namespace Quiz_GrupoSenac
             }
 
 
-            if (numeroPergunta == 9)
-            {
-                FrmTelaResultadoQuiz telaResultado = new FrmTelaResultadoQuiz(pontuacaoTotal, maiorSequencia, resultados);
+            //if (numeroPergunta == 9)
+            //{
+            //    FrmTelaResultadoQuiz telaResultado = new FrmTelaResultadoQuiz(pontuacaoTotal, maiorSequencia, resultados);
+               
+            //    telaResultado.ShowDialog();
 
+            //    this.Close();
 
-                telaResultado.Show();
-                this.Hide();
-                return;
-            }
+            //    return;
+
+            //}
 
 
         }

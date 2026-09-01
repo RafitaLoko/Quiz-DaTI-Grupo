@@ -32,9 +32,11 @@ namespace Quiz_GrupoSenac.Forms
 
         private void btnVoltarMenu_Click(object sender, EventArgs e)
         {
+            this.Hide();
+
             FrmMenuPrincipal menu = new FrmMenuPrincipal();
-            menu.Show();
-            this.Close();
+            menu.ShowDialog();
+            
         }
 
         private void FrmTelaResultadoQuiz_Load(object sender, EventArgs e)
