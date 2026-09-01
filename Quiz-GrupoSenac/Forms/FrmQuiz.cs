@@ -43,7 +43,7 @@ namespace Quiz_GrupoSenac
             InitializeComponent();
         }
 
-        private void btnProximaQuiz_Click(object sender, EventArgs e)
+        private  void btnProximaQuiz_Click(object sender, EventArgs e)
         {
             Pergunta pergunta = perguntas[numeroPergunta];
 
@@ -67,14 +67,23 @@ namespace Quiz_GrupoSenac
 
             bool acertou = pergunta.Alternativas[respostaEscolhida].Correta;
 
+            if (acertou)
+            {
+                MessageBox.Show("Resposta correta!");
+            }
+            else
+            {
+                MessageBox.Show("Resposta errada!");
+            }
 
             if (numeroPergunta == 9)
             {
-                
-                return;
+                FrmTelaResultadoQuiz resultado = new FrmTelaResultadoQuiz(pontuacaoTotal, maiorSequencia, resultados);
+                resultado.Show();
+                this.Hide();
             }
 
-            numeroPergunta++;
+        numeroPergunta++;
 
             Pergunta proxima = perguntas[numeroPergunta];
 
