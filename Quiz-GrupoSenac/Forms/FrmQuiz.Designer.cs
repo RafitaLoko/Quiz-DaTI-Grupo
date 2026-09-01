@@ -51,7 +51,6 @@
             lblNickQuiz.Name = "lblNickQuiz";
             lblNickQuiz.Size = new Size(0, 25);
             lblNickQuiz.TabIndex = 0;
-
             // 
             // lblNivelQuiz
             // 
@@ -85,11 +84,10 @@
             // 
             // lblPerguntaQuiz
             // 
-            lblPerguntaQuiz.AutoSize = true;
             lblPerguntaQuiz.BackColor = Color.GreenYellow;
-            lblPerguntaQuiz.Location = new Point(64, 66);
+            lblPerguntaQuiz.Location = new Point(12, 57);
             lblPerguntaQuiz.Name = "lblPerguntaQuiz";
-            lblPerguntaQuiz.Size = new Size(86, 25);
+            lblPerguntaQuiz.Size = new Size(746, 145);
             lblPerguntaQuiz.TabIndex = 4;
             lblPerguntaQuiz.Text = "Pergunta:";
             // 

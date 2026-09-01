@@ -98,7 +98,7 @@ namespace Quiz_GrupoSenac
 
             lblPerguntaNumeroQuiz.Text = "Pergunta " + (numeroPergunta + 1) + " de 10";
 
-            lblPerguntaNumeroQuiz.Text = "Pergunta" + (numeroPergunta + 1) + " de 10";
+          
 
 
             lblPerguntaQuiz.Text = proxima.Enunciado;
