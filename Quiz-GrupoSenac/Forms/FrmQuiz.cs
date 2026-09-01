@@ -26,6 +26,9 @@ namespace Quiz_GrupoSenac
 
 
 
+
+
+
         List<Resultado> resultados = new List<Resultado>(); 
         
         
@@ -152,7 +155,6 @@ namespace Quiz_GrupoSenac
                 MessageBox.Show("Não existem 10 perguntas cadastradas.");
                 return;
             }
-
 
 
             if (numeroPergunta == 9)
