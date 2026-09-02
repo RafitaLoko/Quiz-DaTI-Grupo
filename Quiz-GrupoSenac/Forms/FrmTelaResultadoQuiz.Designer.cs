@@ -56,6 +56,7 @@
             lblPontuacao.Size = new Size(101, 25);
             lblPontuacao.TabIndex = 1;
             lblPontuacao.Text = "🏆 Pontos:";
+            lblPontuacao.Click += lblPontuacao_Click;
             // 
             // lblAcertos
             // 

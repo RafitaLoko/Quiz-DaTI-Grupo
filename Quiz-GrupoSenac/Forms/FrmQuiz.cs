@@ -162,7 +162,7 @@ namespace Quiz_GrupoSenac
             //if (numeroPergunta == 9)
             //{
             //    FrmTelaResultadoQuiz telaResultado = new FrmTelaResultadoQuiz(pontuacaoTotal, maiorSequencia, resultados);
-               
+
             //    telaResultado.ShowDialog();
 
             //    this.Close();
@@ -170,6 +170,15 @@ namespace Quiz_GrupoSenac
             //    return;
 
             //}
+
+            await ResultadosRepository.Cadastrar(new ResultadoQuiz
+            {
+                NickId = Sessao.UsuarioLogado.Id,
+                PontuacaoTotal = pontuacaoTotal,
+                MaiorSequencia = maiorSequencia,
+                Acertos = resultados.Count(r => r.Acertou),
+                Erros = resultados.Count(r => !r.Acertou)
+            });
 
 
         }
