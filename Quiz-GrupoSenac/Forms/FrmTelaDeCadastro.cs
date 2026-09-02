@@ -28,6 +28,38 @@ namespace Quiz_GrupoSenac
                 return;
             }
 
+
+            string senha = txtSenhaTelaCadastro.Text;
+            if (senha.Length < 8)
+            {
+                MessageBox.Show("A senha deve ter pelo menos 8 caracteres.");
+                return;
+            }
+
+            if (!senha.Any(char.IsUpper))
+            {
+                MessageBox.Show("A senha deve ter pelo menos uma letra maiúscula.");
+                return;
+            }
+
+            if (!senha.Any(char.IsLower))
+            {
+                MessageBox.Show("A senha deve ter pelo menos uma letra minúscula.");
+                return;
+            }
+
+            if (!senha.Any(char.IsDigit))
+            {
+                MessageBox.Show("A senha deve ter pelo menos um número.");
+                return;
+            }
+
+            if (!senha.Any(c => !char.IsLetterOrDigit(c)))
+            {
+                MessageBox.Show("A senha deve ter pelo menos um caractere especial!");
+                return;
+            }
+
             string senhaCriptografada =
                 BCrypt.Net.BCrypt.HashPassword(txtSenhaTelaCadastro.Text);
 

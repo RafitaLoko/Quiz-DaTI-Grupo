@@ -19,7 +19,9 @@ namespace Quiz_GrupoSenac
 
         private void Voltar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
+            frmMenuPrincipal.ShowDialog();
         }
 
         private void FrmRanking_Load(object sender, EventArgs e)
