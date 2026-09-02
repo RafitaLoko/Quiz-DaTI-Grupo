@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Quiz_GrupoSenac.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,9 +25,15 @@ namespace Quiz_GrupoSenac
             frmMenuPrincipal.ShowDialog();
         }
 
-        private void FrmRanking_Load(object sender, EventArgs e)
+        private async void FrmRanking_Load(object sender, EventArgs e)
         {
+            var ranking = await ResultadosRepository.ObterRanking();
+            dgvRanking.DataSource = ranking;
 
+
+            dgvRanking.Columns["Nick"].HeaderText = "Jogador";
+            dgvRanking.Columns["PontuacaoTotal"].HeaderText = "Pontuação";
+            dgvRanking.Columns["Acertos"].HeaderText = "Acertos";
         }
     }
 }

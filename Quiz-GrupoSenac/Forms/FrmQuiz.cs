@@ -69,6 +69,30 @@ namespace Quiz_GrupoSenac
 
             if (acertou)
             {
+                pontuacaoTotal += pergunta.Pontuacao;
+                sequenciaAcertos++;
+
+                if (sequenciaAcertos > maiorSequencia)
+                    maiorSequencia = sequenciaAcertos;
+            }
+            else
+            {
+                sequenciaAcertos = 0;
+            }
+
+
+                resultados.Add(new Resultado
+                {
+                    EnunciadoResultado = pergunta.Enunciado,
+                    Acertou = acertou,
+                    PontosGanhos = acertou ? pergunta.Pontuacao : 0
+                }
+
+                    );
+
+
+            if (acertou)
+            {
                 MessageBox.Show("Resposta correta!");
             }
             else

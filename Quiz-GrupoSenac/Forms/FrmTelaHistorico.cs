@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Quiz_GrupoSenac.Modelos;
+using Quiz_GrupoSenac.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,10 +32,14 @@ namespace Quiz_GrupoSenac
 
         }
 
-        private void FrmTelaHistorico_Load(object sender, EventArgs e)
+        private async void FrmTelaHistorico_Load(object sender, EventArgs e)
         {
+            var historico = await ResultadosRepository.ObterHistorico(Sessao.UsuarioLogado.Id);
+            dgvHistorico.DataSource = historico;
 
-
+            dgvHistorico.Columns["Nick"].HeaderText = "Jogador";
+            dgvHistorico.Columns["PontuacaoTotal"].HeaderText = "Pontuação";
+            dgvHistorico.Columns["Acertos"].HeaderText = "Acertos";
         }
     }
 }

@@ -95,7 +95,7 @@
             lstResultados.ItemHeight = 25;
             lstResultados.Location = new Point(12, 204);
             lstResultados.Name = "lstResultados";
-            lstResultados.Size = new Size(634, 129);
+            lstResultados.Size = new Size(776, 179);
             lstResultados.TabIndex = 5;
             // 
             // btnVoltarMenu
