@@ -28,8 +28,17 @@ namespace Quiz_GrupoSenac
 
         private async void btnEntrar_Click(object sender, EventArgs e)
         {
+            string senha = txtSenha.Text;
 
             Usuario usuario = await UsuarioRepository.BuscarPorNick(txtNick.Text);
+
+            if (usuario == null)
+            {
+                MessageBox.Show("Nick ou senha incorretos");
+                return;
+
+            }
+
 
             if (usuario != null && BCrypt.Net.BCrypt.Verify(txtSenha.Text, usuario.Senha))
             {
