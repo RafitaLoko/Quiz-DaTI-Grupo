@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRanking));
-            dataGridView1 = new DataGridView();
+            dgvRanking = new DataGridView();
             Voltar = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvRanking).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dgvRanking
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 5);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(776, 369);
-            dataGridView1.TabIndex = 0;
+            dgvRanking.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvRanking.Location = new Point(12, 5);
+            dgvRanking.Name = "dgvRanking";
+            dgvRanking.RowHeadersWidth = 62;
+            dgvRanking.Size = new Size(776, 369);
+            dgvRanking.TabIndex = 0;
             // 
             // Voltar
             // 
@@ -64,18 +64,18 @@
             BackColor = Color.PaleGoldenrod;
             ClientSize = new Size(800, 450);
             Controls.Add(Voltar);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvRanking);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmRanking";
             Text = "TelaRanking";
             Load += FrmRanking_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvRanking).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dgvRanking;
         private Button Voltar;
     }
 }

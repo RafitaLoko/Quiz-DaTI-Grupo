@@ -25,8 +25,41 @@ namespace Quiz_GrupoSenac.Repositories
                 );
         }
 
+<<<<<<< HEAD
 
         
+=======
+        public static async Task<List<ResultadoQuiz>> ObterRanking()
+        {
+            var resultado = await conexao.Conectar().QueryAsync<ResultadoQuiz>(
+                @"SELECT u.Nick, r.pontuacao_total AS PontuacaoTotal, r.acertos AS Acertos, r.maior_sequencia AS MaiorSequencia
+                        FROM Resultados r
+                    INNER JOIN Usuario u ON r.nick_id = u.Id
+                    ORDER BY r.pontuacao_total DESC
+                    LIMIT 10"
+
+                  );
+            return resultado.ToList();
+        }
+
+
+        public static async Task<List<ResultadoQuiz>> ObterHistorico(int nickId)
+        {
+            var resultado = await conexao.Conectar().QueryAsync<ResultadoQuiz>(
+                @"SELECT u.Nick, r.pontuacao_total AS PontuacaoTotal, r.acertos AS Acertos, r.erros AS Erros, r.maior_sequencia AS MaiorSequencia
+                        FROM Resultados r
+                    INNER JOIN Usuario u ON r.nick_id = u.Id
+                    WHERE r.nick_id = @NickId
+                    ORDER BY r.id DESC
+                    ",
+                new { nickId = nickId }
+
+                  );
+            return resultado.ToList();
+        }
+
+
+>>>>>>> 4a6e016d048239740749e1dc1e8786ff771a3144
 
 
 
