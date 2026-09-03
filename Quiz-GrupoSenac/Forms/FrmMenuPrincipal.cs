@@ -1,4 +1,5 @@
 ﻿using Quiz_GrupoSenac.Modelos;
+using Quiz_GrupoSenac.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,9 +21,22 @@ namespace Quiz_GrupoSenac
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
+
+            //int usuarioId = Sessao.UsuarioLogado.Id;
+            //ResultadosRepository repository = new ResultadosRepository();
+
+            // bool jaFez = await repository.JaFezQuizHoje(nick);
+
+            //if (jaFez)
+            //{
+            //    MessageBox.Show("Você já realizou o quiz hoje. Tente novamente amanhã!");
+            //    return;
+            //}
+
+            FrmQuiz quiz = new FrmQuiz();
+            quiz.ShowDialog();
             this.Hide();   
-            FrmQuiz frmQuiz = new FrmQuiz();
-            frmQuiz.ShowDialog();
+            
         }
 
         private void btnVerRanking_Click(object sender, EventArgs e)
