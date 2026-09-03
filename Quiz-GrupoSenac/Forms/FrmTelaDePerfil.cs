@@ -21,17 +21,19 @@ namespace Quiz_GrupoSenac
 
         private async void FrmTelaDePerfil_Load(object sender, EventArgs e)
         {
+            var totais = await ResultadosRepository.ObterTotaisUsuario(Sessao.UsuarioLogado.Id);
+
 
 
             lblNicknamePerfil.Text = Sessao.UsuarioLogado.Nick;
 
             lblNivelPerfil.Text = "Iniciante";
 
-            //lblPontuacaoTotalPerfil.Text = Sessao.UsuarioLogado.PontuacaoTotal;
-            //lblAcertosPerfil.Text = Sessao.UsuarioLogado;
-            //lblPerguntasRespondidasPerfil.Text = Sessao.UsuarioLogado;
-            //lblMaiorSequenciaAcertosPerfil.Text = Sessao.UsuarioLogado;
-            //lblConquistasPerfil.Text = Sessao.UsuarioLogado;
+            lblPontuacaoTotalPerfil.Text ="Pontuação Total: " + totais.PontuacaoTotal;
+            lblAcertosPerfil.Text = "Acertos: " + totais.Acertos;
+            lblPerguntasRespondidasPerfil.Text = "Perguntas respondidas: " + totais.PerguntasRespondidas;
+            lblMaiorSequenciaAcertosPerfil.Text = "Maior sequência de acertos: " + totais.MaiorSequencia;
+            
 
 
         }

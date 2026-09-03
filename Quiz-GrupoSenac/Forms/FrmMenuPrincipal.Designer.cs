@@ -34,6 +34,7 @@
             btnHistorico = new Button();
             btnPerfil = new Button();
             btnComoJogar = new Button();
+            btnSair = new Button();
             SuspendLayout();
             // 
             // btnIniciar
@@ -101,12 +102,26 @@
             btnComoJogar.UseVisualStyleBackColor = false;
             btnComoJogar.Click += btnComoJogar_Click;
             // 
+            // btnSair
+            // 
+            btnSair.BackColor = Color.Red;
+            btnSair.FlatAppearance.BorderColor = Color.Orange;
+            btnSair.FlatStyle = FlatStyle.Flat;
+            btnSair.Location = new Point(12, 385);
+            btnSair.Name = "btnSair";
+            btnSair.Size = new Size(134, 53);
+            btnSair.TabIndex = 5;
+            btnSair.Text = "Sair";
+            btnSair.UseVisualStyleBackColor = false;
+            btnSair.Click += btnSair_Click;
+            // 
             // FrmMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnSair);
             Controls.Add(btnComoJogar);
             Controls.Add(btnPerfil);
             Controls.Add(btnHistorico);
@@ -126,5 +141,6 @@
         private Button btnHistorico;
         private Button btnPerfil;
         private Button btnComoJogar;
+        private Button btnSair;
     }
 }

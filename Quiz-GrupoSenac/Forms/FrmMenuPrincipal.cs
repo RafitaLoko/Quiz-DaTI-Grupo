@@ -21,6 +21,7 @@ namespace Quiz_GrupoSenac
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
             //int usuarioId = Sessao.UsuarioLogado.Id;
             //ResultadosRepository repository = new ResultadosRepository();
@@ -37,6 +38,11 @@ namespace Quiz_GrupoSenac
             quiz.ShowDialog();
             this.Hide();   
             
+=======
+            this.Hide();
+            FrmQuiz frmQuiz = new FrmQuiz();
+            frmQuiz.ShowDialog();
+>>>>>>> a9700d055aefdbaacca593414fa9ce02e7fcb763
         }
 
         private void btnVerRanking_Click(object sender, EventArgs e)
@@ -71,6 +77,15 @@ namespace Quiz_GrupoSenac
             this.Hide();
             FrmComoJogar frmComoJogar = new FrmComoJogar();
             frmComoJogar.ShowDialog();
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            var resposta = MessageBox.Show("Deseja realmente sair?", "Confirmar", MessageBoxButtons.YesNo);
+            if (resposta == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }
