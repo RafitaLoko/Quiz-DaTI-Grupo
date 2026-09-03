@@ -13,16 +13,18 @@ namespace Quiz_GrupoSenac.Repositories
     {
         private static Conexao conexao = new Conexao();
 
-        public static async Task Cadastrar(Pergunta pergunta)
+        public static async Task<int> Cadastrar(Pergunta pergunta)
         {
-            await conexao.Conectar().QueryAsync(
+            int idPergunta = await conexao.Conectar().QueryFirstOrDefaultAsync<int>(
             @"
                 INSERT INTO Pergunta (Enunciado, Tipo, Nivel, Tema, Pontuacao)
-                VALUES (@Enunciado, @Tipo, @Nivel, @Tema, @Pontuacao)
+                VALUES (@Enunciado, @Tipo, @Nivel, @Tema, @Pontuacao) 
+                RETURNING Id
             ",
             pergunta
              );
 
+            return idPergunta;
         }
 
         public static async Task <List<Pergunta>> BuscarPerguntas()
