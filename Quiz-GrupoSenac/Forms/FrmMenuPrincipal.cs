@@ -20,7 +20,7 @@ namespace Quiz_GrupoSenac
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            this.Hide();   
+            this.Hide();
             FrmQuiz frmQuiz = new FrmQuiz();
             frmQuiz.ShowDialog();
         }
@@ -57,6 +57,15 @@ namespace Quiz_GrupoSenac
             this.Hide();
             FrmComoJogar frmComoJogar = new FrmComoJogar();
             frmComoJogar.ShowDialog();
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            var resposta = MessageBox.Show("Deseja realmente sair?", "Confirmar", MessageBoxButtons.YesNo);
+            if (resposta == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }
