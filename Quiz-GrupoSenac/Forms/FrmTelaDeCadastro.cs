@@ -30,9 +30,9 @@ namespace Quiz_GrupoSenac
 
 
             string senha = txtSenhaTelaCadastro.Text;
-            if (senha.Length < 8)
+            if (senha.Length < 6)
             {
-                MessageBox.Show("A senha deve ter pelo menos 8 caracteres.");
+                MessageBox.Show("A senha deve ter pelo menos 6 caracteres.");
                 return;
             }
 
