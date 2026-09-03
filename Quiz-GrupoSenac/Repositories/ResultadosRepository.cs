@@ -25,10 +25,7 @@ namespace Quiz_GrupoSenac.Repositories
                 );
         }
 
-<<<<<<< HEAD
 
-        
-=======
         public static async Task<List<ResultadoQuiz>> ObterRanking()
         {
             var resultado = await conexao.Conectar().QueryAsync<ResultadoQuiz>(
@@ -59,7 +56,7 @@ namespace Quiz_GrupoSenac.Repositories
         }
 
 
->>>>>>> 4a6e016d048239740749e1dc1e8786ff771a3144
+
 
 
 
