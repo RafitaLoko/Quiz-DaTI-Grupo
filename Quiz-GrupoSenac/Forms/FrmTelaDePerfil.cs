@@ -1,4 +1,5 @@
 ﻿using Quiz_GrupoSenac.Modelos;
+using Quiz_GrupoSenac.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,17 +19,19 @@ namespace Quiz_GrupoSenac
             InitializeComponent();
         }
 
-        private void FrmTelaDePerfil_Load(object sender, EventArgs e)
+        private async void FrmTelaDePerfil_Load(object sender, EventArgs e)
         {
 
 
             lblNicknamePerfil.Text = Sessao.UsuarioLogado.Nick;
-            //lblNivelPerfil.Text = Sessao.UsuarioLogado.
+
+            lblNivelPerfil.Text = "Iniciante";
+
             //lblPontuacaoTotalPerfil.Text = Sessao.UsuarioLogado.PontuacaoTotal;
-            //lblAcertosPerfil.Text = Sessao.UsuarioLogado.
-            //lblPerguntasRespondidasPerfil.Text = Sessao.UsuarioLogado.
-            //lblMaiorSequenciaAcertosPerfil.Text = Sessao.UsuarioLogado.
-            //lblConquistasPerfil.Text = Sessao.UsuarioLogado.
+            //lblAcertosPerfil.Text = Sessao.UsuarioLogado;
+            //lblPerguntasRespondidasPerfil.Text = Sessao.UsuarioLogado;
+            //lblMaiorSequenciaAcertosPerfil.Text = Sessao.UsuarioLogado;
+            //lblConquistasPerfil.Text = Sessao.UsuarioLogado;
 
 
         }

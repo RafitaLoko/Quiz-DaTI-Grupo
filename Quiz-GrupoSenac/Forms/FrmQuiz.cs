@@ -43,7 +43,7 @@ namespace Quiz_GrupoSenac
             InitializeComponent();
         }
 
-        private  void btnProximaQuiz_Click(object sender, EventArgs e)
+        private async  void btnProximaQuiz_Click(object sender, EventArgs e)
         {
             Pergunta pergunta = perguntas[numeroPergunta];
 
@@ -69,6 +69,30 @@ namespace Quiz_GrupoSenac
 
             if (acertou)
             {
+                pontuacaoTotal += pergunta.Pontuacao;
+                sequenciaAcertos++;
+
+                if (sequenciaAcertos > maiorSequencia)
+                    maiorSequencia = sequenciaAcertos;
+            }
+            else
+            {
+                sequenciaAcertos = 0;
+            }
+
+
+                resultados.Add(new Resultado
+                {
+                    EnunciadoResultado = pergunta.Enunciado,
+                    Acertou = acertou,
+                    PontosGanhos = acertou ? pergunta.Pontuacao : 0
+                }
+
+                    );
+
+
+            if (acertou)
+            {
                 MessageBox.Show("Resposta correta!");
             }
             else
@@ -78,9 +102,11 @@ namespace Quiz_GrupoSenac
 
             if (numeroPergunta == 9)
             {
-                FrmTelaResultadoQuiz resultado = new FrmTelaResultadoQuiz(pontuacaoTotal, maiorSequencia, resultados);
-                resultado.Show();
                 this.Hide();
+                FrmTelaResultadoQuiz resultado = new FrmTelaResultadoQuiz(pontuacaoTotal, maiorSequencia, resultados);
+                resultado.ShowDialog();
+              
+                return;
             }
 
         numeroPergunta++;
@@ -117,6 +143,26 @@ namespace Quiz_GrupoSenac
             if (numeroPergunta == 9)
             {
                 btnProximaQuiz.Text = "Finalizar";
+            
+
+
+                
+
+           
+                await ResultadosRepository.Cadastrar(new ResultadoQuiz
+                {
+                    NickId = Sessao.UsuarioLogado.Id,
+                    PontuacaoTotal = pontuacaoTotal,
+                    MaiorSequencia = maiorSequencia,
+                    Acertos = resultados.Count(r => r.Acertou),
+                    Erros = resultados.Count(r => !r.Acertou)
+                });
+
+                this.Hide();
+                FrmTelaResultadoQuiz telaResultado = new FrmTelaResultadoQuiz(pontuacaoTotal, maiorSequencia, resultados);
+                telaResultado.ShowDialog();
+                this.Close();
+                return;
             }
 
         }
@@ -155,18 +201,6 @@ namespace Quiz_GrupoSenac
                 MessageBox.Show("Não existem 10 perguntas cadastradas.");
                 return;
             }
-
-
-            if (numeroPergunta == 9)
-            {
-                FrmTelaResultadoQuiz telaResultado = new FrmTelaResultadoQuiz(pontuacaoTotal, maiorSequencia, resultados);
-
-
-                telaResultado.Show();
-                this.Hide();
-                return;
-            }
-
 
         }
 

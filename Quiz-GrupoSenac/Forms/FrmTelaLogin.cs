@@ -29,7 +29,29 @@ namespace Quiz_GrupoSenac
         private async void btnEntrar_Click(object sender, EventArgs e)
         {
 
+
+            if (txtNick.Text == "admin" && txtSenha.Text == "1234")
+            {
+                this.Hide();
+                FrmTelaMenuAdmin frmTelaMenuAdmin = new FrmTelaMenuAdmin();
+                frmTelaMenuAdmin.ShowDialog();
+            }
+            else
+            {
+              
+            }
+
+            string senha = txtSenha.Text;
+
             Usuario usuario = await UsuarioRepository.BuscarPorNick(txtNick.Text);
+
+            if (usuario == null)
+            {
+                MessageBox.Show("Nick ou senha incorretos");
+                return;
+
+            }
+
 
             if (usuario != null && BCrypt.Net.BCrypt.Verify(txtSenha.Text, usuario.Senha))
             {
@@ -44,16 +66,7 @@ namespace Quiz_GrupoSenac
                 
             }
 
-            if (txtNick.Text == "admin" && txtSenha.Text == "1234")
-            {
-                this.Hide();
-                FrmTelaMenuAdmin frmTelaMenuAdmin = new FrmTelaMenuAdmin();
-                frmTelaMenuAdmin.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Nick ou Senha invalidos");
-            }
+           
         }
 
         private void btnCadastreTelaLogin_Click(object sender, EventArgs e)

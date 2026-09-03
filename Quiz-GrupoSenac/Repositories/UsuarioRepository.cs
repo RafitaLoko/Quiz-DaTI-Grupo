@@ -52,6 +52,35 @@ namespace Quiz_GrupoSenac.Repositories
 
          
         }
+
+
+        public static async Task<Usuario> BuscarPorId(int id)
+        {
+            var usuario = await conexao.Conectar().QueryFirstOrDefaultAsync<Usuario>(
+                @"
+        SELECT
+            Id,
+            Nome,
+            Nick,
+            DataNascimento,
+            Senha,
+            Tipo
+        FROM
+            Usuario
+        WHERE
+            Id = @Id
+        ",
+                new
+                {
+                    Id = id
+                }
+            );
+
+            return usuario;
+        }
+
+
+
     }
 }
 

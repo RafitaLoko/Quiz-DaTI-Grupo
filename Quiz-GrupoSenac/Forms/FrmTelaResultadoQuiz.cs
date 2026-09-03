@@ -17,10 +17,10 @@ namespace Quiz_GrupoSenac.Forms
         {
             InitializeComponent();
 
-            lblPontuacao.Text = pontuacaoTotal.ToString();
-            lblSequencia.Text = maiorSequencia.ToString();
-            lblAcertos.Text = resultados.Count(r => r.Acertou).ToString();
-            lblErros.Text = resultados.Count(r => !r.Acertou).ToString();
+            lblPontuacao.Text = "🏆 Pontos: " + pontuacaoTotal;
+            lblSequencia.Text = "Maior sequencia: " + maiorSequencia;
+            lblAcertos.Text = "Acertos: " + resultados.Count(r => r.Acertou).ToString();
+            lblErros.Text = "Erros: " + resultados.Count(r => !r.Acertou).ToString();
 
             foreach (var r in resultados)
             {
@@ -32,9 +32,11 @@ namespace Quiz_GrupoSenac.Forms
 
         private void btnVoltarMenu_Click(object sender, EventArgs e)
         {
+            this.Hide();
+
             FrmMenuPrincipal menu = new FrmMenuPrincipal();
-            menu.Show();
-            this.Close();
+            menu.ShowDialog();
+
         }
 
         private void FrmTelaResultadoQuiz_Load(object sender, EventArgs e)
@@ -42,6 +44,11 @@ namespace Quiz_GrupoSenac.Forms
 
 
 
+
+        }
+
+        private void lblPontuacao_Click(object sender, EventArgs e)
+        {
 
         }
     }
