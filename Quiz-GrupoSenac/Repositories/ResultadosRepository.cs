@@ -28,7 +28,7 @@ namespace Quiz_GrupoSenac.Repositories
         public static async Task<List<ResultadoQuiz>> ObterRanking()
         {
             var resultado = await conexao.Conectar().QueryAsync<ResultadoQuiz>(
-                @"SELECT u.Nick, r.pontuacao_total AS PontuacaoTotal, r.acertos AS Acertos
+                @"SELECT u.Nick, r.pontuacao_total AS PontuacaoTotal, r.acertos AS Acertos, r.maior_sequencia AS MaiorSequencia
                         FROM Resultados r
                     INNER JOIN Usuario u ON r.nick_id = u.Id
                     ORDER BY r.pontuacao_total DESC
