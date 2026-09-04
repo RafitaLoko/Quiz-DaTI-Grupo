@@ -57,6 +57,7 @@
             button3 = new Button();
             button4 = new Button();
             label3 = new Label();
+            btnVoltar = new Button();
             SuspendLayout();
             // 
             // btnCadastrarPergunta
@@ -327,12 +328,26 @@
             label3.TabIndex = 68;
             label3.Text = "Alternativa correta";
             // 
+            // btnVoltar
+            // 
+            btnVoltar.BackColor = Color.Orange;
+            btnVoltar.FlatAppearance.BorderColor = Color.FromArgb(192, 0, 0);
+            btnVoltar.FlatStyle = FlatStyle.Flat;
+            btnVoltar.Location = new Point(10, 454);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(112, 34);
+            btnVoltar.TabIndex = 69;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
+            // 
             // FrmCadastrarPerguntaVF_ADMIN_
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(800, 500);
+            Controls.Add(btnVoltar);
             Controls.Add(label3);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -399,5 +414,6 @@
         private Button button3;
         private Button button4;
         private Label label3;
+        private Button btnVoltar;
     }
 }
