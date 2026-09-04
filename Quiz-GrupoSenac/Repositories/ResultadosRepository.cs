@@ -40,27 +40,25 @@ namespace Quiz_GrupoSenac.Repositories
         }
 
 
-    //    public async Task<bool> JaFezQuizHoje(int usuarioId)
-    //    {
-    //        string sql = @"
-    //    SELECT COUNT(*)
-    //    FROM Resultado
-    //    WHERE UsuarioId = @UsuarioId
-    //    AND DATE(DataHora) = CURRENT_DATE
-    //";
+        
+        public async Task<bool> JaFezQuizHoje(int nickId)
+{
+    string sql = @"
+        SELECT COUNT(*)
+        FROM Resultados
+        WHERE Nick_id = @Nick_id
+        AND DATE(Data_hora) = CURRENT_DATE;
+    ";
 
-    //        using (var conexao = Conexao.Conectar())
-    //        {
-    //            int quantidade = await conexao.ExecuteScalarAsync<int>(
-    //                sql,
-    //                new { UsuarioId = usuarioId }
-    //            );
+    
+        int quantidade = await conexao.Conectar().ExecuteScalarAsync<int>(
+            sql,
+            new { Nick_id = nickId }
+        );
 
-    //            return quantidade > 0;
-    //        }
-    //    }
-
-
+        return quantidade > 0;
+    
+}
 
 
 

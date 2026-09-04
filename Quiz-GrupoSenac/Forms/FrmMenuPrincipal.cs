@@ -19,30 +19,27 @@ namespace Quiz_GrupoSenac
             InitializeComponent();
         }
 
-        private void btnIniciar_Click(object sender, EventArgs e)
+        private async void btnIniciar_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
 
-            //int usuarioId = Sessao.UsuarioLogado.Id;
-            //ResultadosRepository repository = new ResultadosRepository();
 
-            // bool jaFez = await repository.JaFezQuizHoje(nick);
+            int usuarioId = Sessao.UsuarioLogado.Id;
+            ResultadosRepository repository = new ResultadosRepository();
 
-            //if (jaFez)
-            //{
-            //    MessageBox.Show("Você já realizou o quiz hoje. Tente novamente amanhã!");
-            //    return;
-            //}
+            bool jaFez = await repository.JaFezQuizHoje(usuarioId);
 
-            FrmQuiz quiz = new FrmQuiz();
-            quiz.ShowDialog();
-            this.Hide();   
+            if (jaFez)
+            {
+                MessageBox.Show("Você já realizou o quiz hoje. Tente novamente amanhã!");
+                return;
+            }
+
             
-=======
+
             this.Hide();
             FrmQuiz frmQuiz = new FrmQuiz();
             frmQuiz.ShowDialog();
->>>>>>> a9700d055aefdbaacca593414fa9ce02e7fcb763
+
         }
 
         private void btnVerRanking_Click(object sender, EventArgs e)
