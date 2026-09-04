@@ -62,12 +62,17 @@
             // 
             // btnSair
             // 
+            btnSair.BackColor = Color.Red;
+            btnSair.FlatAppearance.BorderColor = Color.FromArgb(255, 128, 0);
+            btnSair.FlatStyle = FlatStyle.Flat;
+            btnSair.ForeColor = Color.Black;
             btnSair.Location = new Point(12, 390);
             btnSair.Name = "btnSair";
             btnSair.Size = new Size(112, 34);
             btnSair.TabIndex = 3;
             btnSair.Text = "Sair";
-            btnSair.UseVisualStyleBackColor = true;
+            btnSair.UseVisualStyleBackColor = false;
+            btnSair.Click += btnSair_Click;
             // 
             // FrmTelaMenuAdmin
             // 

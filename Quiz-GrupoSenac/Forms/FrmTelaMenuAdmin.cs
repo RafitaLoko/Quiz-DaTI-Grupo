@@ -32,8 +32,8 @@ namespace Quiz_GrupoSenac.Forms
         private void btnCadastrarPerguntasQuiz_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CadastrarPerguntas_ADMIN_ cadastrarPerguntas_ADMIN = new CadastrarPerguntas_ADMIN_();
-            cadastrarPerguntas_ADMIN.ShowDialog();
+            FrmCadastrarPerguntaVF_ADMIN_ cadastrarPeguntas = new FrmCadastrarPerguntaVF_ADMIN_();
+            cadastrarPeguntas.ShowDialog();
         }
 
         private void btnCadastrarPerguntasVF_Click(object sender, EventArgs e)
@@ -41,6 +41,15 @@ namespace Quiz_GrupoSenac.Forms
             this.Hide();
             FrmCadastrarPerguntaVF_ADMIN_ frmCadastrarPerguntaVF_ADMIN_ = new FrmCadastrarPerguntaVF_ADMIN_();
             frmCadastrarPerguntaVF_ADMIN_.ShowDialog();
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            var resposta = MessageBox.Show("Deseja realmente sair?", "Confirmar", MessageBoxButtons.YesNo);
+            if (resposta == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }
