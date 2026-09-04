@@ -42,6 +42,7 @@
             // lblNicknamePerfil
             // 
             lblNicknamePerfil.AutoSize = true;
+            lblNicknamePerfil.BackColor = Color.Gold;
             lblNicknamePerfil.Location = new Point(22, 19);
             lblNicknamePerfil.Name = "lblNicknamePerfil";
             lblNicknamePerfil.Size = new Size(0, 25);
@@ -50,6 +51,7 @@
             // lblNivelPerfil
             // 
             lblNivelPerfil.AutoSize = true;
+            lblNivelPerfil.BackColor = Color.Gold;
             lblNivelPerfil.Location = new Point(22, 86);
             lblNivelPerfil.Name = "lblNivelPerfil";
             lblNivelPerfil.Size = new Size(55, 25);
@@ -59,6 +61,7 @@
             // lblPontuacaoTotalPerfil
             // 
             lblPontuacaoTotalPerfil.AutoSize = true;
+            lblPontuacaoTotalPerfil.BackColor = Color.Gold;
             lblPontuacaoTotalPerfil.Location = new Point(366, 29);
             lblPontuacaoTotalPerfil.Name = "lblPontuacaoTotalPerfil";
             lblPontuacaoTotalPerfil.Size = new Size(140, 25);
@@ -68,6 +71,7 @@
             // lblAcertosPerfil
             // 
             lblAcertosPerfil.AutoSize = true;
+            lblAcertosPerfil.BackColor = Color.Gold;
             lblAcertosPerfil.Location = new Point(366, 76);
             lblAcertosPerfil.Name = "lblAcertosPerfil";
             lblAcertosPerfil.Size = new Size(76, 25);
@@ -77,6 +81,7 @@
             // lblPerguntasRespondidasPerfil
             // 
             lblPerguntasRespondidasPerfil.AutoSize = true;
+            lblPerguntasRespondidasPerfil.BackColor = Color.Gold;
             lblPerguntasRespondidasPerfil.Location = new Point(366, 134);
             lblPerguntasRespondidasPerfil.Name = "lblPerguntasRespondidasPerfil";
             lblPerguntasRespondidasPerfil.Size = new Size(197, 25);
@@ -86,6 +91,7 @@
             // lblMaiorSequenciaAcertosPerfil
             // 
             lblMaiorSequenciaAcertosPerfil.AutoSize = true;
+            lblMaiorSequenciaAcertosPerfil.BackColor = Color.Gold;
             lblMaiorSequenciaAcertosPerfil.Location = new Point(366, 195);
             lblMaiorSequenciaAcertosPerfil.Name = "lblMaiorSequenciaAcertosPerfil";
             lblMaiorSequenciaAcertosPerfil.Size = new Size(232, 25);
@@ -95,11 +101,11 @@
             // lblConquistasPerfil
             // 
             lblConquistasPerfil.AutoSize = true;
+            lblConquistasPerfil.BackColor = Color.Gold;
             lblConquistasPerfil.Location = new Point(22, 266);
             lblConquistasPerfil.Name = "lblConquistasPerfil";
-            lblConquistasPerfil.Size = new Size(100, 25);
+            lblConquistasPerfil.Size = new Size(0, 25);
             lblConquistasPerfil.TabIndex = 6;
-            lblConquistasPerfil.Text = "Conquistas";
             // 
             // btnVoltarPerfil
             // 

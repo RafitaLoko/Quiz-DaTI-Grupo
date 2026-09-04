@@ -59,7 +59,7 @@ namespace Quiz_GrupoSenac
                 this.Hide();
                 FrmMenuPrincipal menu = new FrmMenuPrincipal();
                 menu.ShowDialog();
-                this.Show();
+               
             }
             else
             {

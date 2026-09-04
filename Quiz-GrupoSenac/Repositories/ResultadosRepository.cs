@@ -40,6 +40,32 @@ namespace Quiz_GrupoSenac.Repositories
         }
 
 
+        
+        public async Task<bool> JaFezQuizHoje(int nickId)
+{
+    string sql = @"
+        SELECT COUNT(*)
+        FROM Resultados
+        WHERE Nick_id = @Nick_id
+        AND DATE(Data_hora) = CURRENT_DATE;
+    ";
+
+    
+        int quantidade = await conexao.Conectar().ExecuteScalarAsync<int>(
+            sql,
+            new { Nick_id = nickId }
+        );
+
+        return quantidade > 0;
+    
+}
+
+
+
+
+
+
+
         public static async Task<List<ResultadoQuiz>> ObterHistorico(int nickId)
         {
             var resultado = await conexao.Conectar().QueryAsync<ResultadoQuiz>(
@@ -49,13 +75,26 @@ namespace Quiz_GrupoSenac.Repositories
                     WHERE r.nick_id = @NickId
                     ORDER BY r.id DESC
                     ",
-                new { nickId = nickId }
+                new { NickId = nickId }
 
                   );
             return resultado.ToList();
         }
 
-
+        public static async Task<ResultadoQuiz>ObterTotaisUsuario(int nickId)
+        {
+            var resultado = await conexao.Conectar().QueryFirstOrDefaultAsync<ResultadoQuiz>(
+                @"SELECT
+                COALESCE(SUM(pontuacao_total), 0) AS PontuacaoTotal,
+                COALESCE(SUM(acertos), 0) AS Acertos,
+                COALESCE(SUM(acertos + erros), 0) AS PerguntasRespondidas,
+                COALESCE(MAX(maior_sequencia), 0) AS MaiorSequencia
+                FROM Resultados
+                WHERE nick_id = @NickId",
+                new { NickId = nickId }
+              );
+            return resultado;
+        }
 
 
 

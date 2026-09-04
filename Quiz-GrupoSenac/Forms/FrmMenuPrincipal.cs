@@ -1,4 +1,5 @@
 ﻿using Quiz_GrupoSenac.Modelos;
+using Quiz_GrupoSenac.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,11 +19,27 @@ namespace Quiz_GrupoSenac
             InitializeComponent();
         }
 
-        private void btnIniciar_Click(object sender, EventArgs e)
+        private async void btnIniciar_Click(object sender, EventArgs e)
         {
-            this.Hide();   
+
+
+            int usuarioId = Sessao.UsuarioLogado.Id;
+            ResultadosRepository repository = new ResultadosRepository();
+
+            bool jaFez = await repository.JaFezQuizHoje(usuarioId);
+
+            if (jaFez)
+            {
+                MessageBox.Show("Você já realizou o quiz hoje. Tente novamente amanhã!");
+                return;
+            }
+
+            
+
+            this.Hide();
             FrmQuiz frmQuiz = new FrmQuiz();
             frmQuiz.ShowDialog();
+
         }
 
         private void btnVerRanking_Click(object sender, EventArgs e)
@@ -57,6 +74,15 @@ namespace Quiz_GrupoSenac
             this.Hide();
             FrmComoJogar frmComoJogar = new FrmComoJogar();
             frmComoJogar.ShowDialog();
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            var resposta = MessageBox.Show("Deseja realmente sair?", "Confirmar", MessageBoxButtons.YesNo);
+            if (resposta == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

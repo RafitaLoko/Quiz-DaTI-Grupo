@@ -20,5 +20,6 @@ namespace Quiz_GrupoSenac.Modelos
 
         public int Erros {  get; set;}
 
+        public int PerguntasRespondidas { get; set;}
     }
 }
