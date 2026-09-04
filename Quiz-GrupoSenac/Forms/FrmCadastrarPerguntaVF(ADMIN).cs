@@ -133,6 +133,11 @@ namespace Quiz_GrupoSenac.Forms
             AlternativaCorreta = "4";
         }
 
-
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmTelaMenuAdmin menuAdmin = new FrmTelaMenuAdmin();
+            menuAdmin.ShowDialog();
+        }
     }
 }
