@@ -55,7 +55,7 @@ namespace Quiz_GrupoSenac.Forms
             {
                 pergunta.Pontuacao = 10;
             }
-            else if (pergunta.Nivel == "Fasil")
+            else if (pergunta.Nivel == "Fácil")
             {
                 pergunta.Pontuacao = 20;
             }
@@ -70,7 +70,7 @@ namespace Quiz_GrupoSenac.Forms
 
             int idPergunta = await PerguntaRepository.Cadastrar(pergunta);
 
-            if (pergunta.Tipo == "Alternativa")
+            if (pergunta.Tipo == "Alternativas")
             {
                 Alternativa alternativa1 = new Alternativa();
 
